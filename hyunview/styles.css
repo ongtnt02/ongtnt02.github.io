@@ -316,6 +316,38 @@ a { color: inherit; }
   letter-spacing: .01em;
 }
 
+/* 히어로 안 이벤트 한 줄 — 첫 화면에서 바로 보이게 */
+.hero-event {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 18px;
+  padding: 11px 14px;
+  border: 1px solid rgba(230, 217, 191, .38);
+  border-left: 3px solid var(--gold);
+  border-radius: 10px;
+  background: rgba(177, 138, 82, .14);
+  text-decoration: none;
+  line-height: 1.5;
+}
+.hero-event:hover { background: rgba(177, 138, 82, .22); }
+.hero-event-label {
+  flex: 0 0 auto;
+  font-size: .68rem;
+  font-weight: 700;
+  letter-spacing: .1em;
+  color: #2a1f10;
+  background: var(--gold);
+  border-radius: 999px;
+  padding: 3px 9px;
+}
+.hero-event-text {
+  font-size: .82rem;
+  color: #f0e6d3;
+  word-break: keep-all;
+}
+.hero-event-text strong { color: #fff; }
+
 .hero-facts {
   display: flex;
   flex-wrap: wrap;

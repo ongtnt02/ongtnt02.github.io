@@ -15,12 +15,13 @@
   렌더 확인용: ?w=390 처럼 폭을 주면 그 폭으로 페이지를 그린다(높이는 내용에 맞춰 자동).
   ?h=844 를 주면 그 높이만 잘라 볼 수 있다. 광고 게재 전 삭제해도 되는 파일.
 -->
-<iframe id="f" src="index.html" title="hyunview 렌더 확인"></iframe>
+<iframe id="f" title="hyunview 렌더 확인"></iframe>
 <script>
   const p = new URLSearchParams(location.search);
   const w = Math.max(320, Math.min(1600, parseInt(p.get('w') || '390', 10)));
   const fixedH = parseInt(p.get('h') || '0', 10);
   const f = document.getElementById('f');
+  f.src = 'index.html?cb=' + Date.now();
   f.style.width = w + 'px';
   f.style.height = (fixedH || 900) + 'px';
   f.addEventListener('load', () => {

@@ -1,4 +1,5 @@
 User-agent: *
 Allow: /
+Disallow: /everpine/
 
 Sitemap: https://ongtnt02.github.io/soheeen/sitemap.xml

@@ -7,7 +7,8 @@
 <meta name="description" content="경기도 의정부시 가능동 590-4번지 일원, 지하 4층~지상 25층 7개동 546세대 규모의 지역주택조합 사업 '의정부 현진에버빌 하이뷰' 안내 페이지입니다. 확인된 사실과 확인 중인 항목을 구분해 정리했습니다.">
 <meta name="robots" content="noindex, nofollow">
 <meta name="color-scheme" content="light">
-<link rel="stylesheet" href="styles.css?v=20261120">
+<link rel="preload" as="image" href="assets/hero-aerial.jpg">
+<link rel="stylesheet" href="styles.css?v=20261120b">
 </head>
 <body>
 <a class="skip-link" href="#main">본문으로 바로 가기</a>
@@ -43,14 +44,10 @@
        1. 히어로
        ========================================================== -->
   <section class="hero">
-    <!-- 이미지 자리: 히어로 배경 (선택, assets/hero.jpg). 넣지 않으면 아래 능선 그래픽이 그대로 보입니다 -->
-    <div class="hero-art" aria-hidden="true">
-      <svg viewBox="0 0 1200 420" preserveAspectRatio="none" focusable="false">
-        <path class="ridge ridge-3" d="M0,300 L90,250 L170,278 L260,212 L330,246 L420,196 L500,238 L590,206 L660,244 L760,186 L840,232 L930,200 L1010,248 L1100,214 L1200,262 L1200,420 L0,420 Z"/>
-        <path class="ridge ridge-2" d="M0,336 L110,300 L200,322 L300,272 L390,306 L480,264 L570,300 L670,258 L760,296 L860,262 L960,300 L1060,272 L1160,306 L1200,292 L1200,420 L0,420 Z"/>
-        <path class="ridge ridge-1" d="M0,376 L120,352 L230,368 L340,336 L450,362 L560,334 L670,360 L780,332 L890,358 L1000,336 L1110,360 L1200,344 L1200,420 L0,420 Z"/>
-      </svg>
+    <div class="hero-media" aria-hidden="true">
+      <img src="assets/hero-aerial.jpg" alt="" width="900" height="728" fetchpriority="high" decoding="async">
     </div>
+    <div class="hero-veil" aria-hidden="true"></div>
 
     <div class="wrap hero-inner">
       <p class="eyebrow">경기도 의정부시 가능동 590-4번지 일원</p>
@@ -95,31 +92,38 @@
         <li>모집 신고 변경(2차) <span>2026.09.07</span></li>
         <li>홍보관 개관 <span>2026.04.24</span></li>
       </ul>
+      <p class="credit">조감도: 사업 홍보 자료 · 실제와 다를 수 있습니다</p>
     </div>
   </section>
 
   <!-- ==========================================================
-       2. 방문 이벤트 (첫 화면 아래에서 바로 이어짐)
+       2. 방문 이벤트
        ========================================================== -->
   <section class="event" id="event" aria-labelledby="event-title">
     <div class="wrap">
       <div class="event-card">
-        <p class="event-label">방문 이벤트</p>
-        <h2 id="event-title">이 페이지를 보고 오시면,<br>주중 숙박권을 드립니다</h2>
-        <p class="event-body">
-          본 페이지를 확인하고 상담을 받으신 분께 <strong>주중 숙박권</strong>을 제공하는
-          이벤트를 준비하고 있습니다. 대상과 제공처, 이용 조건은 확정 전이며,
-          자세한 조건은 상담 시 안내드립니다.
-        </p>
-        <ul class="event-terms">
-          <li><span>이벤트 대상</span> 상담 시 안내</li>
-          <li><span>숙박권 제공처</span> 상담 시 안내</li>
-          <li><span>이용 조건</span> 상담 시 안내</li>
-        </ul>
-        <p class="event-note">
-          이벤트의 세부 조건(대상 범위, 제공처, 사용 가능 기간·객실·인원)은 확정 전이며,
-          조건이 정해지면 이 자리에 그대로 표시됩니다. 조건은 상담 시 안내받으실 수 있습니다.
-        </p>
+        <figure class="event-media">
+          <img src="assets/event-stay.jpg" alt="주중 숙박권 이벤트를 나타내는 호텔 객실 연출 이미지" width="1536" height="1024" loading="lazy" decoding="async">
+          <figcaption>이미지는 이벤트를 표현한 연출컷입니다</figcaption>
+        </figure>
+        <div class="event-copy">
+          <p class="event-label">방문 이벤트 · 주중 숙박권</p>
+          <h2 id="event-title">이 페이지를 보고 오시면,<br>주중 숙박권을 드립니다</h2>
+          <p class="event-body">
+            본 페이지를 확인하고 상담을 받으신 분께 <strong>주중 숙박권</strong>을 제공하는
+            이벤트를 준비하고 있습니다. 대상과 제공처, 이용 조건은 확정 전이며,
+            자세한 조건은 상담 시 안내드립니다.
+          </p>
+          <ul class="event-terms">
+            <li><span>이벤트 대상</span> 상담 시 안내</li>
+            <li><span>숙박권 제공처</span> 상담 시 안내</li>
+            <li><span>이용 조건</span> 상담 시 안내</li>
+          </ul>
+          <p class="event-note">
+            세부 조건(대상 범위, 제공처, 사용 가능 기간·객실·인원)은 확정 전이며,
+            조건이 정해지면 이 자리에 그대로 표시됩니다. 조건은 상담 시 안내받으실 수 있습니다.
+          </p>
+        </div>
       </div>
     </div>
   </section>
@@ -138,72 +142,85 @@
         </p>
       </header>
 
-      <div class="table-wrap">
-        <table class="spec-table">
-          <caption class="visually-hidden">의정부 현진에버빌 하이뷰 사업 개요</caption>
-          <tbody>
-            <tr>
-              <th scope="row">사업명</th>
-              <td>의정부 현진에버빌 하이뷰</td>
-            </tr>
-            <tr>
-              <th scope="row">사업 방식</th>
-              <td>지역주택조합 <span class="sub">조합명 (가칭)가능맑은물지역주택조합</span></td>
-            </tr>
-            <tr>
-              <th scope="row">대지 위치</th>
-              <td>경기도 의정부시 가능동 590-4번지 일원</td>
-            </tr>
-            <tr>
-              <th scope="row">규모</th>
-              <td>지하 4층 ~ 지상 25층, 7개동 <span class="sub">공동주택 및 부대복리시설</span></td>
-            </tr>
-            <tr>
-              <th scope="row">세대수</th>
-              <td>총 546세대</td>
-            </tr>
-            <tr>
-              <th scope="row">전용면적 구성</th>
-              <td>59㎡ 254세대 · 84㎡ 292세대</td>
-            </tr>
-            <tr>
-              <th scope="row">대지면적</th>
-              <td>23,002.50㎡ <span class="sub">사업 자료 기준</span></td>
-            </tr>
-            <tr>
-              <th scope="row">주차</th>
-              <td>712대 (세대당 약 1.30대)</td>
-            </tr>
-            <tr>
-              <th scope="row">업무대행</th>
-              <td>씨앤티그룹 주식회사</td>
-            </tr>
-            <tr>
-              <th scope="row">시공·브랜드</th>
-              <td>
-                현진에버빌 <span class="sub">사업명에 사용된 브랜드</span>
-                <span class="tag">시공사 선정·계약 여부 확인 필요</span>
-              </td>
-            </tr>
-            <tr>
-              <th scope="row">분양가·분담금</th>
-              <td><span class="tag tag-todo">확인 중</span> <span class="sub">사업계획승인·조합 총회 전에는 확정될 수 없습니다</span></td>
-            </tr>
-            <tr>
-              <th scope="row">착공·입주 시기</th>
-              <td><span class="tag tag-todo">확인 중</span> <span class="sub">인허가 진행에 따라 변동</span></td>
-            </tr>
-            <tr>
-              <th scope="row">홍보관</th>
-              <td>의정부동 대로변 사거리 코너 · 경전철 범골역 인근 도보권 <span class="sub">정확한 주소 확인 중</span></td>
-            </tr>
-          </tbody>
-        </table>
+      <div class="overview-grid">
+        <div class="table-wrap">
+          <table class="spec-table">
+            <caption class="visually-hidden">의정부 현진에버빌 하이뷰 사업 개요</caption>
+            <tbody>
+              <tr>
+                <th scope="row">사업명</th>
+                <td>의정부 현진에버빌 하이뷰</td>
+              </tr>
+              <tr>
+                <th scope="row">사업 방식</th>
+                <td>지역주택조합 <span class="sub">조합명 (가칭)가능맑은물지역주택조합</span></td>
+              </tr>
+              <tr>
+                <th scope="row">대지 위치</th>
+                <td>경기도 의정부시 가능동 590-4번지 일원</td>
+              </tr>
+              <tr>
+                <th scope="row">규모</th>
+                <td>지하 4층 ~ 지상 25층, 7개동 <span class="sub">공동주택 및 부대복리시설</span></td>
+              </tr>
+              <tr>
+                <th scope="row">세대수</th>
+                <td>총 546세대</td>
+              </tr>
+              <tr>
+                <th scope="row">전용면적 구성</th>
+                <td>59㎡ 254세대 · 84㎡ 292세대</td>
+              </tr>
+              <tr>
+                <th scope="row">대지면적</th>
+                <td>23,002.50㎡ <span class="sub">사업 자료 기준</span></td>
+              </tr>
+              <tr>
+                <th scope="row">주차</th>
+                <td>712대 (세대당 약 1.30대)</td>
+              </tr>
+              <tr>
+                <th scope="row">업무대행</th>
+                <td>씨앤티그룹 주식회사</td>
+              </tr>
+              <tr>
+                <th scope="row">시공·브랜드</th>
+                <td>
+                  현진에버빌 <span class="sub">사업명에 사용된 브랜드</span>
+                  <span class="tag">시공사 선정·계약 여부 확인 필요</span>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">분양가·분담금</th>
+                <td><span class="tag tag-todo">확인 중</span> <span class="sub">사업계획승인·조합 총회 전에는 확정될 수 없습니다</span></td>
+              </tr>
+              <tr>
+                <th scope="row">착공·입주 시기</th>
+                <td><span class="tag tag-todo">확인 중</span> <span class="sub">인허가 진행에 따라 변동</span></td>
+              </tr>
+              <tr>
+                <th scope="row">홍보관</th>
+                <td>의정부동 대로변 사거리 코너 · 경전철 범골역 인근 도보권 <span class="sub">정확한 주소 확인 중</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="overview-figs">
+          <figure class="shot">
+            <img src="assets/site-plan.jpg" alt="의정부 현진에버빌 하이뷰 단지 배치도" width="900" height="729" loading="lazy" decoding="async">
+            <figcaption>단지 배치도 <span>사업 홍보 자료</span></figcaption>
+          </figure>
+          <figure class="shot">
+            <img src="assets/aerial-sunset.jpg" alt="단지 주변 도로와 철도가 보이는 조감 연출 이미지" width="550" height="550" loading="lazy" decoding="async">
+            <figcaption>단지 조감 연출 <span>실제와 다를 수 있습니다</span></figcaption>
+          </figure>
+        </div>
       </div>
 
       <p class="footnote">
         근거: 의정부시 고시 제2025-49호(지구단위계획구역 지정), 의정부시 공고 제2026-373호·제2026-908호·제2026-1740호(조합원 모집 신고 및 변경),
-        공개 보도(2026-04 ~ 2026-09), 단지 정보 공개 사이트. 세부 수치는 사업계획승인 과정에서 변경될 수 있습니다.
+        공개 보도(2026-04 ~ 2026-09), 사업 홍보 자료. 조감도·배치도는 소비자의 이해를 돕기 위한 이미지로, 사업계획승인 과정에서 변경될 수 있습니다.
       </p>
     </div>
   </section>
@@ -223,15 +240,10 @@
       </header>
 
       <div class="loc-grid">
-        <!-- 이미지 자리: 지도. assets/map.png 또는 카카오·네이버 지도 iframe으로 교체 (assets/README.md 참고) -->
-        <div class="map-slot" role="group" aria-label="단지 위치 지도 자리">
-          <div class="map-slot-inner">
-            <span class="pin" aria-hidden="true"></span>
-            <p class="map-slot-label">지도 자리</p>
-            <p class="map-slot-addr">경기도 의정부시 가능동 590-4번지 일원</p>
-            <p class="map-slot-note">정식 게재 시 카카오맵·네이버 지도로 위치를 표시합니다.</p>
-          </div>
-        </div>
+        <figure class="map-figure">
+          <img src="assets/location-map.jpg" alt="GTX-C, 경전철, 주요 도로와 단지 위치를 표시한 입지 안내도" width="900" height="912" loading="lazy" decoding="async">
+          <figcaption>입지 안내도 <span>사업 홍보 자료 · 표기된 개발 계획은 예정 사항입니다</span></figcaption>
+        </figure>
 
         <div class="loc-list">
           <h3 class="minor-title">현재 교통</h3>
@@ -239,7 +251,7 @@
             <table class="spec-table compact">
               <caption class="visually-hidden">주요 역·도로까지 거리</caption>
               <thead>
-                <tr><th scope="col">지점</th><th scope="col">직선·경로 거리</th><th scope="col">도보</th><th scope="col">차량</th></tr>
+                <tr><th scope="col">지점</th><th scope="col">거리</th><th scope="col">도보</th><th scope="col">차량</th></tr>
               </thead>
               <tbody>
                 <tr><th scope="row">흥선역 (의정부경전철)</th><td>1.6km</td><td>약 25분</td><td>약 8분</td></tr>
@@ -254,6 +266,10 @@
             출처: 카카오맵 길찾기(2026-11-20 09:30경 측정). 출발 지점·경로·교통 상황에 따라 달라질 수 있으며,
             차량 시간은 측정 시점의 통행 상황을 반영합니다.
           </p>
+          <figure class="shot shot-wide">
+            <img src="assets/aerial-road.jpg" alt="단지 주변 도로망과 광역철도가 이어지는 모습의 조감 연출 이미지" width="500" height="500" loading="lazy" decoding="async">
+            <figcaption>광역 교통 연출 <span>실제와 다를 수 있습니다</span></figcaption>
+          </figure>
         </div>
       </div>
 
@@ -312,39 +328,48 @@
         </p>
       </header>
 
-      <div class="type-grid">
+      <div class="type-summary">
         <article class="type-card">
           <p class="type-area">전용 59㎡</p>
           <p class="type-count"><span class="num">254</span>세대</p>
-          <p class="type-meta">전체의 약 47%</p>
-          <p class="type-note">세부 타입 표기(59A 등)는 사업 자료 기준입니다.</p>
+          <p class="type-meta">전체의 약 47% · 59A</p>
         </article>
         <article class="type-card">
           <p class="type-area">전용 84㎡</p>
           <p class="type-count"><span class="num">292</span>세대</p>
-          <p class="type-meta">전체의 약 53%</p>
-          <p class="type-note">84A·84B·84C 구성은 사업 자료 기준이며, 타입별 세대수는 확인 중입니다.</p>
+          <p class="type-meta">전체의 약 53% · 84A · 84B · 84C</p>
         </article>
       </div>
 
-      <div class="plan-slots">
-        <!-- 이미지 자리: 59㎡ 평면도 (assets/plan-59.png) -->
-        <figure class="plan-slot">
-          <div class="plan-box" aria-hidden="true">
-            <span class="plan-glyph"></span>
-          </div>
-          <figcaption>59㎡ 평면도 자리 <span>도면 확보 후 삽입</span></figcaption>
+      <div class="plan-gallery">
+        <figure class="plan-card">
+          <a href="assets/plan-59a.jpg" class="plan-link">
+            <img src="assets/plan-59a.jpg" alt="전용 59㎡A 평면도" width="900" height="736" loading="lazy" decoding="async">
+          </a>
+          <figcaption><strong>59㎡A</strong> <span>사업 홍보 자료 · 도면은 변경될 수 있습니다</span></figcaption>
         </figure>
-        <!-- 이미지 자리: 84㎡ 평면도 (assets/plan-84.png) -->
-        <figure class="plan-slot">
-          <div class="plan-box" aria-hidden="true">
-            <span class="plan-glyph"></span>
-          </div>
-          <figcaption>84㎡ 평면도 자리 <span>도면 확보 후 삽입</span></figcaption>
+        <figure class="plan-card">
+          <a href="assets/plan-84a.jpg" class="plan-link">
+            <img src="assets/plan-84a.jpg" alt="전용 84㎡A 평면도" width="900" height="734" loading="lazy" decoding="async">
+          </a>
+          <figcaption><strong>84㎡A</strong> <span>사업 홍보 자료 · 도면은 변경될 수 있습니다</span></figcaption>
+        </figure>
+        <figure class="plan-card">
+          <a href="assets/plan-84b.jpg" class="plan-link">
+            <img src="assets/plan-84b.jpg" alt="전용 84㎡B 평면도" width="900" height="733" loading="lazy" decoding="async">
+          </a>
+          <figcaption><strong>84㎡B</strong> <span>사업 홍보 자료 · 도면은 변경될 수 있습니다</span></figcaption>
+        </figure>
+        <figure class="plan-card">
+          <a href="assets/plan-84c.jpg" class="plan-link">
+            <img src="assets/plan-84c.jpg" alt="전용 84㎡C 평면도" width="900" height="733" loading="lazy" decoding="async">
+          </a>
+          <figcaption><strong>84㎡C</strong> <span>사업 홍보 자료 · 도면은 변경될 수 있습니다</span></figcaption>
         </figure>
       </div>
       <p class="footnote">
-        평면도·치수·마감은 사업계획승인과 실시설계 과정에서 변경될 수 있어, 확보 전까지는 자리만 두었습니다.
+        평면도는 사업 홍보 자료이며, 치수·마감·구조는 사업계획승인과 실시설계 과정에서 변경될 수 있습니다.
+        타입별 세대수(84A·84B·84C)는 공고문 대조가 필요합니다. 이미지를 누르면 원본 크기로 열립니다.
       </p>
     </div>
   </section>
@@ -445,9 +470,30 @@
         </article>
       </div>
 
+      <h3 class="gallery-title">단지 안에서 — 홍보 자료로 본 시설</h3>
+      <div class="gallery">
+        <figure class="shot">
+          <img src="assets/community-board.jpg" alt="커뮤니티 시설을 소개하는 홍보 이미지" width="900" height="734" loading="lazy" decoding="async">
+          <figcaption>커뮤니티 <span>사업 홍보 자료 · 실제와 다를 수 있습니다</span></figcaption>
+        </figure>
+        <figure class="shot">
+          <img src="assets/community-library.jpg" alt="커뮤니티 라운지 인테리어 연출 이미지" width="550" height="550" loading="lazy" decoding="async">
+          <figcaption>커뮤니티 라운지 <span>연출 이미지</span></figcaption>
+        </figure>
+        <figure class="shot">
+          <img src="assets/cpted.jpg" alt="범죄예방설계(CPTED) 적용을 소개하는 홍보 이미지" width="900" height="623" loading="lazy" decoding="async">
+          <figcaption>범죄예방설계 <span>사업 홍보 자료</span></figcaption>
+        </figure>
+        <figure class="shot">
+          <img src="assets/shuttle.jpg" alt="입주민 셔틀 운행을 소개하는 홍보 이미지" width="900" height="729" loading="lazy" decoding="async">
+          <figcaption>셔틀 운행(계획) <span>사업 홍보 자료 · 운행 계획은 변경될 수 있습니다</span></figcaption>
+        </figure>
+      </div>
+
       <p class="footnote">
         거리는 지도 서비스(카카오맵·단지 정보 공개 사이트)의 측정값으로, 서로 측정 기준점이 달라 범위로 적었습니다.
         학교 정보는 경기도의정부교육지원청 관내학교현황·초등학교학구안내, 중학교 학군은 연합뉴스 보도(2026-11-15)를 근거로 했습니다.
+        갤러리 이미지는 사업 홍보 자료로, 시설 구성과 운영 방식은 사업계획승인 이후 달라질 수 있습니다.
       </p>
     </div>
   </section>
@@ -651,26 +697,36 @@
           </ul>
         </div>
         <div>
+          <h3>이미지에 대하여</h3>
+          <ul class="notice-list">
+            <li>본 페이지의 조감도·투시도·배치도·평면도·커뮤니티 이미지는 사업 홍보 자료이며, 소비자의 이해를 돕기 위한 CG·연출 이미지입니다. 실제 시공·준공 모습과 다를 수 있습니다.</li>
+            <li>주중 숙박권 이벤트 이미지는 이벤트를 표현한 연출컷으로, 실제 제공되는 숙소와 무관합니다.</li>
+            <li>입지 안내도에 표시된 개발 계획(GTX-C, 경전철 신설 등)은 예정·계획 단계로 확정된 사항이 아닙니다.</li>
+            <li>이미지의 세부 표기(면적·세대수)는 사업계획승인 이후 변경될 수 있으며, 최종 내용은 공고문과 계약서로 확인하시기 바랍니다.</li>
+          </ul>
+        </div>
+        <div>
           <h3>이 페이지에 대하여</h3>
           <ul class="notice-list">
             <li>본 페이지는 광고물(미리보기)이며, 인허가 진행과 사업계획 변경에 따라 내용이 달라질 수 있습니다.</li>
-            <li>조감도·투시도·평면도 등 이미지 자료는 게재하지 않았습니다. 화면의 도형과 색은 디자인 요소로, 실제 단지 모습이 아닙니다.</li>
             <li>수치는 공개된 고시·공고·보도와 사업 자료를 근거로 하며, 근거가 확인되지 않은 값은 넣지 않았습니다.</li>
             <li>최초 작성 2026년 11월 20일 · 이 페이지의 정보는 작성 시점 기준입니다.</li>
           </ul>
         </div>
-        <div>
-          <h3>출처</h3>
-          <ul class="notice-list sources">
-            <li>의정부시 고시 제2025-49호 — 가능맑은물지구 지구단위계획구역 지정 및 지구단위계획 수립(2025.03.10), 토지이음</li>
-            <li>의정부시 공고 제2026-373호(2026.02.19) · 제2026-908호(2026.04.21) · 제2026-1740호(2026.09.07) — (가칭)가능맑은물지역주택조합 조합원 모집 공고 및 변경</li>
-            <li>「주택법」 제11조의3·제11조의5, 같은 법 시행령 제21조·제24조의4 — 국가법령정보센터</li>
-            <li>국토교통부 보도자료(2026.09.14) GTX-C 노선 착공, 국회 인사청문회 답변(2026.09.16), 이투데이·한국경제·뉴스타운 보도</li>
-            <li>경기도의정부교육지원청 관내학교현황·초등학교학구안내, 연합뉴스(2026.11.15) 중학교 학군 분리 추진 보도</li>
-            <li>카카오맵 길찾기(2026.11.20) — 거리·소요 시간</li>
-            <li>공개 보도: 대한경제(2026.06.08), 리얼캐스트(2026.04.24·2026.06.11), 뷰어스(2026.04.13·2026.04.24), 넥스트데일리(2026.07.07), 부동산이슈저널(2026.04.20)</li>
-          </ul>
-        </div>
+      </div>
+
+      <div class="notice-sources">
+        <h3>출처</h3>
+        <ul class="notice-list sources">
+          <li>의정부시 고시 제2025-49호 — 가능맑은물지구 지구단위계획구역 지정 및 지구단위계획 수립(2025.03.10), 토지이음</li>
+          <li>의정부시 공고 제2026-373호(2026.02.19) · 제2026-908호(2026.04.21) · 제2026-1740호(2026.09.07) — (가칭)가능맑은물지역주택조합 조합원 모집 공고 및 변경</li>
+          <li>「주택법」 제11조의3·제11조의5, 같은 법 시행령 제21조·제24조의4 — 국가법령정보센터</li>
+          <li>국토교통부 보도자료(2026.09.14) GTX-C 노선 착공, 국회 인사청문회 답변(2026.09.16), 이투데이·한국경제·뉴스타운 보도</li>
+          <li>경기도의정부교육지원청 관내학교현황·초등학교학구안내, 연합뉴스(2026.11.15) 중학교 학군 분리 추진 보도</li>
+          <li>카카오맵 길찾기(2026.11.20) — 거리·소요 시간</li>
+          <li>이미지: 사업 공식 홍보 사이트(현진에버빌 하이뷰) 공개 자료 — 조감도·배치도·평면도·커뮤니티·입지 안내도. 이벤트 이미지는 연출 생성 이미지</li>
+          <li>공개 보도: 대한경제(2026.06.08·2026.07.03), 리얼캐스트(2026.04.24·2026.06.11), 뷰어스(2026.04.13·2026.04.24), 넥스트데일리(2026.07.07), 부동산이슈저널(2026.04.20)</li>
+        </ul>
       </div>
     </div>
   </section>
@@ -679,11 +735,13 @@
 
 <footer class="site-footer">
   <div class="wrap footer-inner">
+    <img class="footer-logo" src="assets/brand-logo.png" alt="현진에버빌" width="180" height="105" loading="lazy" decoding="async">
     <p class="footer-brand">의정부 현진에버빌 하이뷰</p>
     <p class="footer-addr">경기도 의정부시 가능동 590-4번지 일원 · 지역주택조합 사업</p>
     <p class="footer-note">
       본 페이지는 미리보기용이며 광고로 게재되지 않았습니다.
       조합원 모집에 관한 최종 내용은 조합의 공고문과 가입 계약서로 확인하시기 바랍니다.
+      모든 이미지는 사업 홍보 자료로, 실제와 다를 수 있습니다.
     </p>
     <p class="footer-meta">작성 2026.11.20 · 확인되지 않은 항목은 ‘확인 중’으로 표시했습니다.</p>
   </div>

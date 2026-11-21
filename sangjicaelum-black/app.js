@@ -128,8 +128,8 @@
       "location.addr": "서울 강남구 역삼동 653-3",
       "location.addr.sub": "언주로 565 · 565, Eonju-ro, Gangnam-gu, Seoul 06135",
       "location.kakao": "카카오맵", "location.naver": "네이버 지도",
-      "location.st1": "언주역", "location.st1.walk": "도보 약 7분",
-      "location.st2": "선정릉역", "location.st2.walk": "도보 약 10분",
+      "location.st1": "언주역", "location.st1.walk": "도보 약 7분", "location.st1.line": "400m · 9호선",
+      "location.st2": "선정릉역", "location.st2.walk": "도보 약 10분", "location.st2.line": "600m · 9호선 · 수인분당선",
       "location.p1.t": "생활 인프라",
       "location.p1": "현대·갤러리아·신세계·롯데백화점, 안다즈 서울 강남, 조선 팰리스, 강남세브란스병원, 차병원이 인접합니다.",
       "location.p2.t": "문화와 녹지",
@@ -180,7 +180,7 @@
       "notice.6": "계약 전 사업부지 현장을 방문하여 도로·소음·조망·일조·진입로 등 현장 여건을 직접 확인하십시오.",
       "notice.7": "본 페이지는 정보 제공을 목적으로 제작된 상담 안내 페이지로, 상지카일룸(주) 및 시행사의 공식 홈페이지가 아닙니다. 시행·시공·수탁 및 건축 정보는 공식 자료와 건축물대장을 근거로 기재했습니다.",
       "notice.8": "금액·잔여 호실·계약 조건은 시점에 따라 달라지므로, 최종 내용은 계약서류와 상담 시점의 공식 자료를 기준으로 확인하십시오.",
-      "notice.sources": "자료 출처",
+      "notice.sources": "자료 출처", "notice.src1": "상지카일룸 BLACK 공식 홈페이지",
       "notice.src2": "공식 배포 브로셔 (복층·마감·시공 실적)",
       "notice.src3": "건축물대장 (사용승인일·용도별 면적·주차)",
       "notice.src4": "카카오맵 도보 경로 (역 거리)",
@@ -194,7 +194,8 @@
       "type.duplex": "복층 레지던스", "type.single": "단층 오피스텔",
       "area.excl": "전용면적", "area.contract": "계약면적", "area.terrace": "테라스면적", "area.usable": "실사용면적",
       "type.view": "평면 보기", "unit.pyeong": "평",
-      "lb.close": "닫기", "lb.prev": "이전 이미지", "lb.next": "다음 이미지"
+      "lb.close": "닫기", "lb.prev": "이전 이미지", "lb.next": "다음 이미지",
+      "a11y.skip": "본문으로 바로 가기", "a11y.nav": "주요 메뉴", "a11y.tabs": "상품 구분", "a11y.dots": "배경 이미지"
     },
 
     en: {
@@ -318,8 +319,8 @@
       "location.addr": "653-3 Yeoksam-dong, Gangnam-gu, Seoul",
       "location.addr.sub": "565, Eonju-ro, Gangnam-gu, Seoul 06135",
       "location.kakao": "Kakao Map", "location.naver": "Naver Map",
-      "location.st1": "Eonju Stn.", "location.st1.walk": "about 7 min on foot",
-      "location.st2": "Seonjeongneung Stn.", "location.st2.walk": "about 10 min on foot",
+      "location.st1": "Eonju Stn.", "location.st1.walk": "about 7 min on foot", "location.st1.line": "400 m · Line 9",
+      "location.st2": "Seonjeongneung Stn.", "location.st2.walk": "about 10 min on foot", "location.st2.line": "600 m · Line 9 · Suin–Bundang",
       "location.p1.t": "Everyday infrastructure",
       "location.p1": "Hyundai, Galleria, Shinsegae and Lotte department stores, Andaz Seoul Gangnam and Josun Palace, Gangnam Severance Hospital and CHA Hospital are close by.",
       "location.p2.t": "Culture and green",
@@ -370,7 +371,7 @@
       "notice.6": "Before contracting, visit the site and check road, noise, view, daylight and access conditions yourself.",
       "notice.7": "This page is an information and enquiry page, not the official website of Sangji Caelum Co., Ltd. or the developer. Developer, contractor, trustee and building data are based on official material and the building register.",
       "notice.8": "Prices, remaining units and contract terms change over time; final terms should be confirmed against the contract documents and official material at the time of consultation.",
-      "notice.sources": "Sources",
+      "notice.sources": "Sources", "notice.src1": "Sangji Caelum BLACK — official website",
       "notice.src2": "Official brochure (duplex, finishes, track record)",
       "notice.src3": "Building register (approval date, area by use, parking)",
       "notice.src4": "Kakao Map walking routes (station distances)",
@@ -384,7 +385,8 @@
       "type.duplex": "Duplex residence", "type.single": "Single-level officetel",
       "area.excl": "Exclusive area", "area.contract": "Contract area", "area.terrace": "Terrace", "area.usable": "Usable area",
       "type.view": "View plan", "unit.pyeong": " pyeong",
-      "lb.close": "Close", "lb.prev": "Previous image", "lb.next": "Next image"
+      "lb.close": "Close", "lb.prev": "Previous image", "lb.next": "Next image",
+      "a11y.skip": "Skip to content", "a11y.nav": "Main menu", "a11y.tabs": "Product type", "a11y.dots": "Background image"
     },
 
     zh: {
@@ -508,8 +510,8 @@
       "location.addr": "首尔江南区驿三洞 653-3",
       "location.addr.sub": "彦州路 565 · 565, Eonju-ro, Gangnam-gu, Seoul 06135",
       "location.kakao": "Kakao 地图", "location.naver": "Naver 地图",
-      "location.st1": "彦州站", "location.st1.walk": "步行约 7 分钟",
-      "location.st2": "宣靖陵站", "location.st2.walk": "步行约 10 分钟",
+      "location.st1": "彦州站", "location.st1.walk": "步行约 7 分钟", "location.st1.line": "400m · 9 号线",
+      "location.st2": "宣靖陵站", "location.st2.walk": "步行约 10 分钟", "location.st2.line": "600m · 9 号线 · 水仁盆唐线",
       "location.p1.t": "生活配套",
       "location.p1": "现代、Galleria、新世界、乐天百货，Andaz 首尔江南、Josun Palace，江南Severance医院与CHA医院均在附近。",
       "location.p2.t": "文化与绿意",
@@ -560,7 +562,7 @@
       "notice.6": "签约前请亲临项目现场，确认道路、噪音、视野、日照与出入口等现场条件。",
       "notice.7": "本页面为提供信息与咨询而制作的页面，并非相地Caelum（株）及开发方的官方网站。开发、施工、受托及建筑信息依据官方资料与建筑台账。",
       "notice.8": "金额、剩余房源与合同条件随时间变化，最终内容请以合同文件及咨询时的官方资料为准。",
-      "notice.sources": "资料来源",
+      "notice.sources": "资料来源", "notice.src1": "相地Caelum BLACK 官方网站",
       "notice.src2": "官方宣传册（复式·材质·施工业绩）",
       "notice.src3": "建筑台账（使用许可日·用途面积·停车）",
       "notice.src4": "Kakao 地图步行路线（车站距离）",
@@ -574,7 +576,8 @@
       "type.duplex": "复式住宅", "type.single": "单层写字楼",
       "area.excl": "专有面积", "area.contract": "合同面积", "area.terrace": "露台面积", "area.usable": "实际使用面积",
       "type.view": "查看户型", "unit.pyeong": "坪",
-      "lb.close": "关闭", "lb.prev": "上一张", "lb.next": "下一张"
+      "lb.close": "关闭", "lb.prev": "上一张", "lb.next": "下一张",
+      "a11y.skip": "跳至正文", "a11y.nav": "主菜单", "a11y.tabs": "产品类型", "a11y.dots": "背景图片"
     }
   };
 
@@ -759,9 +762,20 @@
 
     $$(".lang button").forEach((b) => b.classList.toggle("is-active", b.dataset.lang === state.lang));
 
+    const setA = (sel, key) => { const el = $(sel); if (el) el.setAttribute("aria-label", t(key)); };
+    setA(".site-nav", "a11y.nav");
+    setA(".ts-group", "a11y.tabs");
+    setA(".hero-dots", "a11y.dots");
+    const skip = $(".skip-link"); if (skip) skip.textContent = t("a11y.skip");
+    $$(".js-pyeong").forEach((el) => { el.textContent = t("unit.pyeong"); });
+    const lbClose = $("#lbClose"); if (lbClose) lbClose.setAttribute("aria-label", t("lb.close"));
+    const lbPrev = $("#lbPrev"); if (lbPrev) lbPrev.setAttribute("aria-label", t("lb.prev"));
+    const lbNext = $("#lbNext"); if (lbNext) lbNext.setAttribute("aria-label", t("lb.next"));
+
     renderChips();
     renderType();
     renderTable();
+    updateGalleryLang();
     if (state.lbIndex !== null && !$("#lightbox").hidden) updateLightbox();
 
     try { localStorage.setItem("sjcb-lang", state.lang); } catch (e) {}
@@ -904,6 +918,21 @@
         if (e.key === "Enter" || e.key === " ") { e.preventDefault(); openLightbox(i); }
       });
       grid.appendChild(fig);
+    });
+  }
+
+  function updateGalleryLang() {
+    const items = $$("#galleryGrid .g-item");
+    if (!items.length) return;
+    items.forEach((fig, i) => {
+      const g = GALLERY[i];
+      if (!g) return;
+      const cap = g.cap[LANG_INDEX[state.lang]];
+      fig.setAttribute("aria-label", cap);
+      const capEl = fig.querySelector("figcaption");
+      const img = fig.querySelector("img");
+      if (capEl) capEl.textContent = cap;
+      if (img) img.alt = cap;
     });
   }
 

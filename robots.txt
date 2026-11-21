@@ -2,6 +2,6 @@ User-agent: *
 Allow: /
 Disallow: /everpine/
 Disallow: /hyunview/
-Disallow: /sangjicaelum-black/
 
 Sitemap: https://ongtnt02.github.io/soheeen/sitemap.xml
+Sitemap: https://ongtnt02.github.io/sangjicaelum-black/sitemap.xml

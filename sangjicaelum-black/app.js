@@ -188,7 +188,7 @@
 
       "footer.addr": "서울특별시 강남구 역삼동 653-3 · 언주로 565",
       "footer.parties": "시행 (주)대풍산업 · 시공 (주)상지카일룸 · 수탁 케이비신탁(주)",
-      "footer.contact": "상담 010-4434-2616 · 공식 문의 02-517-5055",
+      "footer.contact": "상담 010-4434-2616",
       "footer.note": "본 페이지는 상담 안내용 미리보기 페이지이며, 상지카일룸(주)의 공식 홈페이지가 아닙니다.",
 
       "type.duplex": "복층 레지던스", "type.single": "단층 오피스텔",
@@ -379,7 +379,7 @@
 
       "footer.addr": "653-3 Yeoksam-dong, Gangnam-gu, Seoul · 565 Eonju-ro",
       "footer.parties": "Developer Daepung Industrial · Contractor Sangji Caelum · Trustee KB Asset Trust",
-      "footer.contact": "Enquiries 010-4434-2616 · Official 02-517-5055",
+      "footer.contact": "Enquiries 010-4434-2616",
       "footer.note": "This is a preview page for enquiries, not the official website of Sangji Caelum Co., Ltd.",
 
       "type.duplex": "Duplex residence", "type.single": "Single-level officetel",
@@ -570,7 +570,7 @@
 
       "footer.addr": "首尔特别市江南区驿三洞 653-3 · 彦州路 565",
       "footer.parties": "开发 大丰产业（株） · 施工 相地Caelum（株） · 受托 KB资产信托（株）",
-      "footer.contact": "咨询 010-4434-2616 · 官方 02-517-5055",
+      "footer.contact": "咨询 010-4434-2616",
       "footer.note": "本页面为咨询用预览页面，并非相地Caelum（株）的官方网站。",
 
       "type.duplex": "复式住宅", "type.single": "单层写字楼",

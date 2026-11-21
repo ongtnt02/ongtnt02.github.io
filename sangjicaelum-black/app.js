@@ -1074,15 +1074,18 @@
 
   function initScrollSpy() {
     const links = $$(".site-nav a");
-    const secs = links.map((a) => document.querySelector(a.getAttribute("href"))).filter(Boolean);
-    if (!("IntersectionObserver" in window) || !secs.length) return;
-    const io = new IntersectionObserver((entries) => {
-      entries.forEach((en) => {
-        if (!en.isIntersecting) return;
-        links.forEach((a) => a.classList.toggle("is-current", a.getAttribute("href") === "#" + en.target.id));
-      });
-    }, { rootMargin: "-45% 0px -50% 0px" });
-    secs.forEach((s) => io.observe(s));
+    const secs = links
+      .map((a) => ({ link: a, el: document.querySelector(a.getAttribute("href")) }))
+      .filter((x) => x.el);
+    if (!secs.length) return;
+    const onScroll = () => {
+      const y = window.scrollY + 160;
+      let current = null;
+      secs.forEach((s) => { if (s.el.offsetTop <= y) current = s.el.id; });
+      secs.forEach((s) => s.link.classList.toggle("is-current", s.el.id === current));
+    };
+    window.addEventListener("scroll", onScroll, { passive: true });
+    onScroll();
   }
 
   function initLangButtons() {

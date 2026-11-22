@@ -186,6 +186,7 @@
 
       "inv.rooms.t": "호실별 분양가와 예상 수익금",
       "inv.rooms.sub": "80% 플랜은 소유권 선이전형과 매입선택형 장기운용 모두에 적용됩니다. 현재 분양 가능 여부와 최종 계약조건은 상담 시 확인해 주십시오.",
+      "inv.rooms.tablist": "호실 구분",
       "inv.rooms.tab.apt": "공동주택 12호실",
       "inv.rooms.tab.ph": "펜트하우스 2호실",
       "inv.rooms.tab.off": "오피스텔 3호실",
@@ -478,6 +479,7 @@
 
       "inv.rooms.t": "Sale price and expected income by unit",
       "inv.rooms.sub": "The 80% plan applies to both the advance-transfer and the long-term hold structures. Current availability and final terms are confirmed in consultation.",
+      "inv.rooms.tablist": "Unit category",
       "inv.rooms.tab.apt": "Residences · 12 units",
       "inv.rooms.tab.ph": "Penthouses · 2 units",
       "inv.rooms.tab.off": "Officetels · 3 units",
@@ -770,6 +772,7 @@
 
       "inv.rooms.t": "各房号售价与预计收益",
       "inv.rooms.sub": "80% 方案同时适用于所有权先转移型与买入选择型长期运营。当前可售情况与最终合同条件请在咨询时确认。",
+      "inv.rooms.tablist": "房号分类",
       "inv.rooms.tab.apt": "住宅 12 户",
       "inv.rooms.tab.ph": "顶层复式 2 户",
       "inv.rooms.tab.off": "写字楼 3 间",
@@ -1101,6 +1104,10 @@
       const v = dict[el.getAttribute("data-i18n-placeholder")];
       if (v) el.setAttribute("placeholder", v);
     });
+    $$("[data-i18n-aria]").forEach((el) => {
+      const v = dict[el.getAttribute("data-i18n-aria")];
+      if (v) el.setAttribute("aria-label", v);
+    });
 
     document.title = dict["meta.title"];
     const md = $('meta[name="description"]');
@@ -1259,7 +1266,7 @@
 
   function invArea(a) {
     if (!a) return t("inv.area.unknown");
-    return a[0].toFixed(2) + "㎡<small>(" + a[1].toFixed(2) + t("unit.pyeong").trim() + ")</small>";
+    return a[0].toFixed(2) + "㎡<small>(" + a[1].toFixed(2) + t("unit.pyeong") + ")</small>";
   }
 
   function renderInvChart() {

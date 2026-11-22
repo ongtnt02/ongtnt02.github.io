@@ -744,3 +744,418 @@ tbody th {
 
 /* 푸터의 긴 주소 줄은 줄바꿈 허용 */
 .footer-brand .brand-kr { white-space: normal; }
+
+/* ============================================================
+   2026-11 개편 — 분양 단계 · 건축개요 · 도면 · 데이터 표
+   ============================================================ */
+
+/* 고정 헤더에 제목이 가리지 않도록 앵커 위치 보정 */
+[id] { scroll-margin-top: 92px; }
+
+/* ---------- 본문 문단 묶음 ---------- */
+.prose p { font-size: 15.5px; }
+.prose p + p { margin-top: 12px; }
+.prose strong { color: var(--forest); }
+.section-deep .prose strong { color: #f2ecdd; }
+.prose .small { font-size: 13px; color: var(--muted); }
+
+.body-link {
+  color: var(--forest);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-thickness: 1px;
+}
+.section-deep .body-link { color: #f0ece1; }
+
+/* ---------- 히어로 보조 정보 ---------- */
+.hero-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 16px;
+  margin-top: 26px;
+  padding-top: 18px;
+  border-top: 1px solid var(--line);
+  font-size: 12.5px;
+  letter-spacing: 0.05em;
+  color: var(--muted);
+}
+.hero-meta span { display: inline-flex; align-items: center; gap: 8px; }
+
+@media (max-width: 719px) {
+  .site-nav { gap: 14px; font-size: 13.5px; }
+}
+
+/* ---------- 숫자 밴드 ---------- */
+.stat-band {
+  background: var(--forest-deep);
+  padding-block: clamp(24px, 4vw, 38px);
+}
+.stat-grid { display: grid; }
+.stat {
+  padding: 14px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+.stat:last-child { border-bottom: 0; }
+.stat .k {
+  display: block;
+  font-family: var(--serif);
+  font-size: clamp(25px, 4.6vw, 33px);
+  line-height: 1.1;
+  letter-spacing: -0.01em;
+  color: #f6f2e7;
+  font-variant-numeric: tabular-nums;
+}
+.stat .k small {
+  font-family: var(--sans);
+  font-size: 12px;
+  letter-spacing: 0.1em;
+  color: #b9ae94;
+  margin-left: 4px;
+}
+.stat .l {
+  display: block;
+  margin-top: 7px;
+  font-size: 12px;
+  letter-spacing: 0.09em;
+  color: #94938a;
+}
+
+@media (min-width: 720px) {
+  .stat-grid { grid-template-columns: repeat(4, 1fr); }
+  .stat {
+    padding: 2px 24px;
+    border-bottom: 0;
+    border-right: 1px solid rgba(255, 255, 255, 0.12);
+  }
+  .stat:first-child { padding-left: 0; }
+  .stat:last-child { border-right: 0; padding-right: 0; }
+}
+
+/* ---------- 분양 단계(1·2·3차) ---------- */
+.roadmap { border-top: 1px solid var(--line); }
+
+.phase {
+  padding: 26px 0 30px;
+  border-bottom: 1px solid var(--line);
+}
+
+.phase-head {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.phase-no {
+  font-family: var(--serif);
+  font-size: 12px;
+  letter-spacing: 0.14em;
+  color: var(--brass);
+}
+
+.phase h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.phase p { font-size: 14.3px; line-height: 1.85; }
+
+.phase ul { margin-top: 14px; }
+.phase li {
+  position: relative;
+  padding-left: 15px;
+  margin-top: 6px;
+  font-size: 13.4px;
+  line-height: 1.75;
+  color: var(--body);
+}
+.phase li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.72em;
+  width: 5px; height: 5px;
+  border-radius: 50%;
+  background: var(--sand-2);
+}
+
+.status {
+  display: inline-flex;
+  align-items: center;
+  height: 23px;
+  padding: 0 10px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  font-size: 11.5px;
+  letter-spacing: 0.05em;
+  white-space: nowrap;
+  color: var(--moss);
+}
+.status-now { background: var(--forest); border-color: var(--forest); color: #f4efe2; }
+.status-next { background: #f3ead7; border-color: #e3d3b4; color: #7a5f33; }
+.status-plan { border-style: dashed; color: var(--muted); }
+
+@media (min-width: 860px) {
+  .roadmap {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border-bottom: 1px solid var(--line);
+  }
+  .phase {
+    padding: 4px 26px 8px;
+    border-bottom: 0;
+    border-right: 1px solid var(--line);
+  }
+  .phase:first-child { padding-left: 0; }
+  .phase:last-child { border-right: 0; padding-right: 0; }
+  .phase h3 { font-size: 18.5px; }
+}
+
+/* ---------- 도면 카드 ---------- */
+.sheet {
+  margin: 0;
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: clamp(10px, 2.4vw, 20px);
+}
+.sheet img { width: 100%; height: auto; }
+.sheet figcaption {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 4px 12px;
+  margin-top: 10px;
+  font-size: 12px;
+  letter-spacing: 0.03em;
+  color: var(--muted);
+}
+.sheet figcaption .scale { color: var(--brass); letter-spacing: 0.06em; }
+
+.plan-pair { display: grid; gap: 16px; margin-top: 26px; }
+
+@media (min-width: 720px) {
+  .plan-pair { grid-template-columns: 1fr 1fr; gap: 20px; }
+}
+
+.sheet-wide { margin-top: 24px; }
+.sheet-wide img { max-height: none; }
+
+/* ---------- 건축 개요 목록 ---------- */
+.spec-cols { display: grid; gap: 0 46px; }
+
+.spec-list {
+  margin: 0;
+  border-top: 1px solid var(--line);
+}
+
+.spec-row {
+  display: grid;
+  grid-template-columns: 7.4em minmax(0, 1fr);
+  gap: 10px;
+  padding: 11px 0;
+  border-bottom: 1px solid var(--line-soft);
+  font-size: 14px;
+  line-height: 1.7;
+}
+.spec-row dt {
+  color: var(--muted);
+  font-size: 13px;
+  letter-spacing: 0.02em;
+}
+.spec-row dd {
+  margin: 0;
+  color: var(--ink);
+  font-variant-numeric: tabular-nums;
+}
+.spec-row dd .sub {
+  display: block;
+  font-size: 12.5px;
+  color: var(--muted);
+}
+
+.spec-list--2col { display: grid; grid-template-columns: 1fr; }
+.spec-row { align-items: start; }
+
+@media (min-width: 820px) {
+  .spec-cols { grid-template-columns: 1fr 1fr; }
+  .spec-list--2col {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 46px;
+    border-top: 0;
+  }
+  .spec-list--2col .spec-row { border-top: 1px solid var(--line-soft); }
+  .spec-list--2col .spec-row:nth-child(-n+2) { border-top: 1px solid var(--line); }
+}
+
+/* ---------- 타입 카드 ---------- */
+.type-grid { display: grid; gap: 14px; }
+
+.type-card {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 22px;
+  background: #fffdf8;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  transition: border-color .18s ease;
+}
+.type-card:hover { border-color: var(--sage); }
+
+.type-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 10px;
+  padding-bottom: 11px;
+  border-bottom: 1px solid var(--line-soft);
+}
+.type-name {
+  font-family: var(--serif);
+  font-size: 18px;
+  color: var(--ink);
+  letter-spacing: 0.01em;
+}
+.type-tag {
+  font-size: 11.5px;
+  letter-spacing: 0.12em;
+  color: var(--brass);
+  white-space: nowrap;
+}
+.type-size {
+  font-family: var(--serif);
+  font-size: 29px;
+  line-height: 1.15;
+  color: var(--forest);
+  font-variant-numeric: tabular-nums;
+}
+.type-size small {
+  display: block;
+  margin-top: 3px;
+  font-family: var(--sans);
+  font-size: 12.5px;
+  letter-spacing: 0.03em;
+  color: var(--muted);
+  font-weight: 400;
+}
+.type-card p { font-size: 13.3px; line-height: 1.8; }
+.type-more {
+  margin-top: auto;
+  padding-top: 4px;
+  font-size: 12.5px;
+  letter-spacing: 0.05em;
+  color: var(--moss);
+}
+.type-card:hover .type-more { color: var(--forest); }
+
+@media (min-width: 640px) {
+  .type-grid { grid-template-columns: 1fr 1fr; }
+}
+@media (min-width: 1000px) {
+  .type-grid { grid-template-columns: repeat(4, 1fr); }
+}
+
+/* ---------- 타입 상세(homes) ---------- */
+.type-title {
+  font-size: clamp(24px, 4.6vw, 34px);
+  letter-spacing: -0.02em;
+}
+.type-title .type-title-sub {
+  display: block;
+  margin-top: 10px;
+  font-family: var(--sans);
+  font-size: 13px;
+  letter-spacing: 0.06em;
+  color: var(--muted);
+  font-weight: 400;
+}
+
+.type-detail { display: grid; gap: clamp(22px, 4vw, 40px); }
+.type-detail .plan-pair { margin-top: 0; }
+
+@media (min-width: 900px) {
+  .type-detail { grid-template-columns: 0.86fr 1.14fr; align-items: start; }
+}
+
+.type-block + .type-block {
+  margin-top: clamp(46px, 8vw, 84px);
+  padding-top: clamp(40px, 7vw, 72px);
+  border-top: 1px solid var(--line);
+}
+
+/* ---------- 칩 · 앵커 ---------- */
+.chip-row { display: flex; flex-wrap: wrap; gap: 8px; }
+.chip {
+  display: inline-flex;
+  align-items: center;
+  min-height: 40px;
+  padding: 8px 15px;
+  background: #fffdf8;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  font-size: 13.5px;
+  color: var(--moss);
+}
+.chip:hover, .chip:focus-visible { border-color: var(--forest); color: var(--forest); }
+.chip .chip-num {
+  font-family: var(--serif);
+  font-size: 12px;
+  letter-spacing: 0.1em;
+  color: var(--brass);
+  margin-right: 7px;
+}
+
+/* ---------- 데이터 표 ---------- */
+.data-table { font-size: 13px; min-width: 780px; }
+.data-table th, .data-table td { padding: 9px 12px; white-space: nowrap; }
+.data-table thead th {
+  font-size: 11.5px;
+  letter-spacing: 0.04em;
+  background: var(--sand);
+  border-bottom: 1px solid var(--line);
+}
+.data-table tbody th {
+  font-weight: 600;
+  font-size: 13px;
+  color: var(--ink);
+}
+.data-table td.num { text-align: right; font-variant-numeric: tabular-nums; }
+.data-table tbody tr:nth-child(even) td,
+.data-table tbody tr:nth-child(even) th { background: rgba(239, 232, 217, 0.34); }
+.data-table tfoot th, .data-table tfoot td {
+  background: var(--sand);
+  border-top: 1px solid var(--line);
+  font-weight: 600;
+  color: var(--forest);
+}
+.data-table .type-cell { font-size: 12px; color: var(--moss); }
+
+/* ---------- 각주 ---------- */
+.note {
+  font-size: 12.4px;
+  line-height: 1.95;
+  color: var(--muted);
+}
+.note + .note { margin-top: 6px; }
+.note a { color: var(--moss); text-decoration: underline; text-underline-offset: 3px; }
+
+/* ---------- 짧은 강조 문장 ---------- */
+.pull {
+  margin-top: 22px;
+  padding: 18px 0 18px 22px;
+  border-left: 2px solid var(--brass);
+  font-family: var(--serif);
+  font-size: clamp(17px, 3.4vw, 20px);
+  line-height: 1.7;
+  color: var(--forest);
+}
+.section-deep .pull { color: #f4efe2; }
+.pull small {
+  display: block;
+  margin-top: 8px;
+  font-family: var(--sans);
+  font-size: 12.5px;
+  letter-spacing: 0.03em;
+  color: var(--muted);
+}

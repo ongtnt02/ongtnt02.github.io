@@ -944,6 +944,7 @@ tbody th {
 /* ---------- 평면도 + 3D 아이소메트릭 나란히 배치 ---------- */
 .plan-iso {
   display: grid;
+  align-items: start;
   gap: 16px;
   margin-top: 26px;
 }
@@ -955,8 +956,8 @@ tbody th {
 
 .plan-iso .sheet img { width: 100%; height: auto; }
 
-/* 캐프션은 카드 높이가 달라도 아래에 붙여 정렬 */
-.plan-iso .sheet figcaption { margin-top: auto; padding-top: 12px; }
+/* 캐프션은 이미지 바로 아래에 붙인다 (도면·렌더 높이가 달라도 각자 자연 높이) */
+.plan-iso .sheet figcaption { padding-top: 2px; }
 
 /* 3D 아이소메트릭은 따뜻한 아이보리 바탕으로 도면과 구분 */
 .sheet-iso {

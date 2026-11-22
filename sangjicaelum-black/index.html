@@ -20,7 +20,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Montserrat:wght@200;300;400;500&family=Noto+Sans+KR:wght@300;400&family=Noto+Sans+SC:wght@300;400&family=Noto+Serif+KR:wght@200;300;400;500&family=Noto+Serif+SC:wght@300;400&display=swap">
 <link rel="preload" as="image" href="assets/images/hero-01.jpg">
-<link rel="stylesheet" href="styles.css?v=20261121d">
+<link rel="stylesheet" href="styles.css?v=20261122b">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -81,6 +81,7 @@
       <a href="#gallery" data-i18n="nav.gallery">갤러리</a>
       <a href="#materials" data-i18n="nav.materials">마감재</a>
       <a href="#amenities" data-i18n="nav.amenities">커뮤니티</a>
+      <a href="#investment" data-i18n="nav.investment">투자</a>
       <a href="#location" data-i18n="nav.location">입지</a>
     </nav>
 
@@ -108,6 +109,7 @@
     <a href="#gallery" data-i18n="nav.gallery">갤러리</a>
     <a href="#materials" data-i18n="nav.materials">마감재</a>
     <a href="#amenities" data-i18n="nav.amenities">커뮤니티</a>
+    <a href="#investment" data-i18n="nav.investment">투자</a>
     <a href="#location" data-i18n="nav.location">입지</a>
     <a href="#enquire" data-i18n="nav.cta">방문 예약</a>
   </nav>
@@ -519,11 +521,240 @@
     </div>
   </section>
 
-  <!-- ========== 07 LOCATION ========== -->
+  <!-- ========== 07 INVESTMENT ========== -->
+  <section class="section investment" id="investment">
+    <div class="wrap">
+      <header class="sec-head reveal">
+        <span class="sec-num">07 — <span data-i18n="sec.investment">INVESTMENT</span></span>
+        <h2 class="serif-lg" data-i18n="inv.title">임대 수익과<br>운용의 구조</h2>
+        <p class="lead" data-i18n="inv.lead">임대 수익과 운용 방식은 소유 시점과 자금 계획에 따라 달라집니다. 운영 자료로 수요를 살펴보고, 세 가지 운용 방식과 지급률, 호실별 분양가를 순서대로 확인하십시오.</p>
+      </header>
+
+      <!-- 07-1 운영 수요 -->
+      <div class="inv-block reveal">
+        <div class="inv-head">
+          <h3 class="inv-h" data-i18n="inv.perf.t">운영자료로 살펴보는 이용 수요</h3>
+          <p class="inv-sub" data-i18n="inv.perf.sub">11개 호실 · 1~6월 예약 기준 운영 현황</p>
+        </div>
+
+        <div class="inv-stats">
+          <div class="inv-stat">
+            <strong class="inv-stat-v" data-i18n="inv.perf.stat1.v">18.06억원</strong>
+            <span class="inv-stat-k" data-i18n="inv.perf.stat1">6개월 예약 기준 매출 합계</span>
+          </div>
+          <div class="inv-stat">
+            <strong class="inv-stat-v" data-i18n="inv.perf.stat2.v">약 91.7%</strong>
+            <span class="inv-stat-k" data-i18n="inv.perf.stat2">월별 객실점유율 단순평균</span>
+          </div>
+        </div>
+
+        <div class="inv-chart-wrap">
+          <p class="inv-chart-cap" data-i18n="inv.perf.cap">월별 예약 기준 매출과 객실점유율</p>
+          <div class="inv-chart" id="invChart"></div>
+        </div>
+        <p class="note" data-i18n="inv.perf.unit">금액 단위: 원 · 점유율은 예약 기준</p>
+
+        <div class="inv-caution">
+          <h4 data-i18n="inv.perf.caution.t">매출과 투자자 수익은 다릅니다</h4>
+          <ul>
+            <li data-i18n="inv.perf.caution.1">예약 기준 매출에는 인건비·관리비·청소비·수수료·세금 등 운영에 필요한 비용이 반영되지 않았습니다. 비용을 차감한 순이익과 투자자에게 지급되는 금액은 별도로 확인해야 합니다.</li>
+            <li data-i18n="inv.perf.caution.2">예약 기준 매출에는 미래 예약이 포함될 수 있습니다. 확정 매출은 정산서와 입금내역으로 확인해야 합니다.</li>
+            <li data-i18n="inv.perf.caution.3">이 수치는 개별 호실의 미래 수익률을 보장하지 않습니다.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- 07-2 세 가지 운용 방식 -->
+      <div class="inv-block reveal">
+        <div class="inv-head">
+          <h3 class="inv-h" data-i18n="inv.plans.t">세 가지 운용 방식</h3>
+          <p class="inv-sub" data-i18n="inv.plans.sub">먼저 소유할지, 나중에 매입을 선택할지 비교하십시오. 아래는 제안 조건이며, 호실별 적용 가능 여부와 최종 약정은 계약 전에 확인합니다.</p>
+        </div>
+
+        <div class="inv-plans">
+          <article class="inv-plan">
+            <span class="c-num">01</span>
+            <h4 class="inv-plan-name" data-i18n="inv.plan1.t">직접매입형</h4>
+            <p class="inv-plan-tag" data-i18n="inv.plan1.tag">분양가 100% 납입 · 즉시 소유</p>
+            <dl class="inv-plan-facts">
+              <div><dt data-i18n="inv.f.purpose">목적</dt><dd data-i18n="inv.plan1.purpose">소유권 확보와 운영수익</dd></div>
+              <div><dt data-i18n="inv.f.initial">최초 납입</dt><dd data-i18n="inv.plan1.initial">분양가의 100%</dd></div>
+              <div><dt data-i18n="inv.f.title">소유권</dt><dd data-i18n="inv.plan1.title">매매 완료 시 이전</dd></div>
+              <div><dt data-i18n="inv.f.rate">기본 지급률</dt><dd data-i18n="inv.plan1.rate">실제 납입금의 연 7%</dd></div>
+              <div><dt data-i18n="inv.f.end">종료 시</dt><dd data-i18n="inv.plan1.end">고객이 계속 보유 · 매매대금 반환 없음</dd></div>
+            </dl>
+          </article>
+
+          <article class="inv-plan">
+            <span class="c-num">02</span>
+            <h4 class="inv-plan-name" data-i18n="inv.plan2.t">소유권 선이전형</h4>
+            <p class="inv-plan-tag" data-i18n="inv.plan2.tag">80% 납입으로 먼저 소유</p>
+            <dl class="inv-plan-facts">
+              <div><dt data-i18n="inv.f.purpose">목적</dt><dd data-i18n="inv.plan2.purpose">80%로 먼저 소유, 잔금은 추후 정산</dd></div>
+              <div><dt data-i18n="inv.f.initial">최초 납입</dt><dd data-i18n="inv.plan2.initial">분양가의 80%</dd></div>
+              <div><dt data-i18n="inv.f.title">소유권</dt><dd data-i18n="inv.plan2.title">80% 납부 시 이전 · 미납 잔금 20%에 회사 명의 1순위 근저당</dd></div>
+              <div><dt data-i18n="inv.f.rate">기본 지급률</dt><dd data-i18n="inv.plan2.rate">실제 납입금의 연 6% · 잔금 완납 시 연 7%</dd></div>
+              <div><dt data-i18n="inv.f.end">종료 시</dt><dd data-i18n="inv.plan2.end">잔금·담보·소유권 정산, 별도 약정에 따름</dd></div>
+            </dl>
+          </article>
+
+          <article class="inv-plan">
+            <span class="c-num">03</span>
+            <h4 class="inv-plan-name" data-i18n="inv.plan3.t">매입선택형 장기운용</h4>
+            <p class="inv-plan-tag" data-i18n="inv.plan3.tag">80% 보증금으로 운용 후 매입 선택</p>
+            <dl class="inv-plan-facts">
+              <div><dt data-i18n="inv.f.purpose">목적</dt><dd data-i18n="inv.plan3.purpose">보증금으로 운용 후 추후 매입 선택</dd></div>
+              <div><dt data-i18n="inv.f.initial">최초 납입</dt><dd data-i18n="inv.plan3.initial">분양가의 80% (보증금)</dd></div>
+              <div><dt data-i18n="inv.f.title">소유권</dt><dd data-i18n="inv.plan3.title">회사 보유 · 매입 선택 시 잔금 20% 정산 후 이전</dd></div>
+              <div><dt data-i18n="inv.f.rate">기본 지급률</dt><dd data-i18n="inv.plan3.rate">보증금의 연 6%</dd></div>
+              <div><dt data-i18n="inv.f.end">종료 시</dt><dd data-i18n="inv.plan3.end">매입 또는 보증금 정산 (별도 약정)</dd></div>
+            </dl>
+          </article>
+        </div>
+
+        <div class="inv-callout">
+          <p data-i18n="inv.plans.callout">80% 납입 후 4년 이내 잔금을 정산하면, 소유권 선이전형은 회사 근저당을 말소하고 매입선택형 장기운용은 현 분양가로 소유권을 이전합니다. 전액 납부를 완료한 이후에는 연 7%가 적용됩니다. 종료 처리는 별도 약정에 따릅니다.</p>
+        </div>
+
+        <div class="inv-caution">
+          <h4 data-i18n="inv.plans.care.t">투자금 보호를 위한 공통 확인</h4>
+          <ul>
+            <li data-i18n="inv.plans.care.1">회사 명의 근저당은 회사의 잔금 회수용입니다. 고객이 낸 80%나 수익금을 보호하는 담보가 아니므로, 고객의 권리 보호와 구분해 약정합니다.</li>
+            <li data-i18n="inv.plans.care.2">담보가치는 분양가가 아닌 보수적인 처분 예상액으로 검토합니다. 선순위 권리·임차보증금·처분비용을 차감한 회수 가능액을 확인하며, 1순위 담보도 원금 전액 회수를 보장하지 않습니다.</li>
+            <li data-i18n="inv.plans.care.3">반환 재원과 수익 지급 재원을 분리해 확인합니다. 반환 대기기간의 7%는 대기 보상이며 원금 보호 장치가 아닙니다. 소유권을 먼저 돌려준 뒤 반환금을 기다리는 정산은 피합니다.</li>
+            <li data-i18n="inv.plans.care.4">매입선택형 장기운용은 고객 반환채권을 담보하기 위한 1순위 근저당 또는 담보신탁 1순위 우선수익권 설정을 검토·약정합니다. 위 보호 장치는 검토·약정할 조건이며, 설정 완료나 보증 확정을 뜻하지 않습니다.</li>
+            <li data-i18n="inv.plans.care.5">등기부·담보계약·반환계획을 확인한 후 계약하고, 임대차·운영 관계도 별도로 명시합니다.</li>
+            <li data-i18n="inv.plans.care.6">직접매입형은 기존 담보 말소를 확인하고, 수익금이 지급되지 않을 경우 운영계약 종료와 호실 인도 절차를 약정합니다. 매입선택형 장기운용의 반환은 반환금 지급과 소유권·담보 정산을 동시에 처리합니다.</li>
+          </ul>
+          <p class="note" data-i18n="inv.plans.note">수익 지급과 자금 회수는 최종 계약조건 및 지급 주체의 이행 능력에 따라 달라집니다. 외국인 취득 규정과 실거주 요건에 따라 적용 가능 여부를 확인해야 합니다.</p>
+        </div>
+      </div>
+
+      <!-- 07-3 지급률 -->
+      <div class="inv-block reveal">
+        <div class="inv-head">
+          <h3 class="inv-h" data-i18n="inv.rates.t">7% · 6.5% · 6%, 선택에 따라</h3>
+          <p class="inv-sub" data-i18n="inv.rates.sub">지급률보다 먼저 소유 여부와 자금이 필요한 시점을 정합니다. 수익률은 연율이며, 각 단계의 지급률은 중복 적용하지 않습니다.</p>
+        </div>
+
+        <div class="inv-rates">
+          <article class="inv-rate">
+            <span class="inv-rate-v">7%</span>
+            <h4 data-i18n="inv.rate1.t">직접매입 · 잔금 완납</h4>
+            <p data-i18n="inv.rate1.d">구매대금 전액을 납부하고 소유권 이전을 마친 고객. 소유권 선이전형의 잔금 정산 또는 매입선택형 장기운용의 매매전환 후 총 납입금에 적용합니다.</p>
+          </article>
+          <article class="inv-rate">
+            <span class="inv-rate-v">6%</span>
+            <h4 data-i18n="inv.rate2.t">80% 납입 단계</h4>
+            <p data-i18n="inv.rate2.d">잔금 정산 전 소유권 선이전형 고객, 또는 매입 선택 전 매입선택형 장기운용 고객. 실제 납입금 또는 보증금에 연 6%를 적용합니다.</p>
+          </article>
+          <article class="inv-rate">
+            <span class="inv-rate-v">6.5%</span>
+            <h4 data-i18n="inv.rate3.t">자발적 유지</h4>
+            <p data-i18n="inv.rate3.d">종료·반환 선택권이 약정된 고객이 자발적으로 유지를 선택한 경우. 별도 합의에 따라 미반환금 기준 연 6.5%를 적용합니다.</p>
+          </article>
+          <article class="inv-rate">
+            <span class="inv-rate-v">7%</span>
+            <h4 data-i18n="inv.rate4.t">정식 반환 신청 후</h4>
+            <p data-i18n="inv.rate4.d">별도 약정에 따른 유효한 반환 신청 후 미반환금에 적용합니다. 6개월·4년 기한 적용과 소유권·담보 정산은 종료 약정에 정합니다.</p>
+          </article>
+        </div>
+        <p class="note" data-i18n="inv.rates.note">소유권 선이전 자체로 7%가 적용되지는 않습니다. 잔금 완납 및 운영 약정이 기준입니다.</p>
+      </div>
+
+      <!-- 07-4 호실별 분양가 -->
+      <div class="inv-block reveal">
+        <div class="inv-head">
+          <h3 class="inv-h" data-i18n="inv.rooms.t">호실별 분양가와 예상 수익금</h3>
+          <p class="inv-sub" data-i18n="inv.rooms.sub">80% 플랜은 소유권 선이전형과 매입선택형 장기운용 모두에 적용됩니다. 현재 분양 가능 여부와 최종 계약조건은 상담 시 확인해 주십시오.</p>
+        </div>
+
+        <div class="inv-tabs" role="tablist" aria-label="호실 구분">
+          <button type="button" class="is-active" data-invcat="apt" role="tab" aria-selected="true" data-i18n="inv.rooms.tab.apt">공동주택 12호실</button>
+          <button type="button" data-invcat="ph" role="tab" aria-selected="false" data-i18n="inv.rooms.tab.ph">펜트하우스 2호실</button>
+          <button type="button" data-invcat="off" role="tab" aria-selected="false" data-i18n="inv.rooms.tab.off">오피스텔 3호실</button>
+        </div>
+
+        <div class="inv-table-wrap">
+          <table class="inv-table">
+            <caption data-i18n="inv.rooms.unit">금액 단위: 원 · 수익금은 1년 기준</caption>
+            <thead>
+              <tr>
+                <th scope="col" data-i18n="inv.th.unit">호실</th>
+                <th scope="col" data-i18n="inv.th.sale">분양면적</th>
+                <th scope="col" data-i18n="inv.th.excl">전용면적</th>
+                <th scope="col" data-i18n="inv.th.price">분양가</th>
+                <th scope="col" data-i18n="inv.th.inc7">연 7% 수익금</th>
+                <th scope="col" data-i18n="inv.th.inv80">80% 투자금</th>
+                <th scope="col" data-i18n="inv.th.inc6">연 6% 수익금</th>
+              </tr>
+            </thead>
+            <tbody id="invTableBody"></tbody>
+          </table>
+        </div>
+        <p class="note" id="invCatNote" data-i18n="inv.rooms.note.apt">소유권 선이전형은 먼저 소유권 이전 후 잔금 담보를 설정하고, 매입선택형 장기운용은 잔금 정산 시 소유권을 이전합니다.</p>
+        <p class="note" data-i18n="inv.rooms.calc">직접매입형 수익금 = 분양가 × 7% / 80% 납입 단계 수익금 = 실제 납입금 × 6%. 세금·비용 공제 전 단순 계산이며 잔금·종료·지급조건은 별도 약정에 따릅니다.</p>
+      </div>
+
+      <!-- 07-5 30억원 예시 -->
+      <div class="inv-block reveal">
+        <div class="inv-head">
+          <h3 class="inv-h" data-i18n="inv.ex.t">30억원 호실로 보는 금액 예시</h3>
+          <p class="inv-sub" data-i18n="inv.ex.sub">실제 입금액 기준, 세금·비용 공제 전 단순 계산입니다. 월 금액은 연간 금액의 12분의 1이며, 실제 지급일과 일할 계산 방식은 계약서에 정합니다.</p>
+        </div>
+
+        <div class="inv-table-wrap">
+          <table class="inv-table inv-table--ex">
+            <thead>
+              <tr>
+                <th scope="col" data-i18n="inv.ex.th.cat">구분</th>
+                <th scope="col" data-i18n="inv.ex.th.basis">계산 기준</th>
+                <th scope="col" data-i18n="inv.ex.th.year">연간 지급액</th>
+                <th scope="col" data-i18n="inv.ex.th.month">월 환산액</th>
+              </tr>
+            </thead>
+            <tbody id="invExBody"></tbody>
+          </table>
+        </div>
+
+        <div class="inv-examples">
+          <article class="inv-example">
+            <h4 data-i18n="inv.exA.t">예시 A · 장기운용 2년 후 매입 선택</h4>
+            <ul>
+              <li data-i18n="inv.exA.1">첫 2년: 24억원 × 6% × 2년 = 2억 8,800만원</li>
+              <li data-i18n="inv.exA.2">잔금 6억원 납부·소유권 이전 후 2년: 30억원 × 7% × 2년 = 4억 2,000만원</li>
+            </ul>
+            <p class="inv-example-sum" data-i18n="inv.exA.sum">4년 지급액 합계 7억 800만원 + 부동산 보유</p>
+          </article>
+          <article class="inv-example">
+            <h4 data-i18n="inv.exB.t">예시 B · 장기운용 유지 후 약정에 따른 반환</h4>
+            <ul>
+              <li data-i18n="inv.exB.1">첫 2년 6%: 2억 8,800만원</li>
+              <li data-i18n="inv.exB.2">다음 1년 6.5%: 1억 5,600만원</li>
+              <li data-i18n="inv.exB.3">반환 신청 후 6개월 7%: 8,400만원</li>
+            </ul>
+            <p class="inv-example-sum" data-i18n="inv.exB.sum">3년 6개월 지급액 합계 5억 2,800만원 + 납입금 24억원 반환</p>
+          </article>
+        </div>
+        <p class="note" data-i18n="inv.ex.note">비교 예시는 최초 계약일부터 최대 4년의 지급기간을 가정합니다. 중간에 매입해도 지급기간이 새로 4년 시작되는 것으로 계산하지 않았습니다. 실제 계약기간·지급 이행·자산가격에 따라 결과가 달라집니다.</p>
+      </div>
+
+      <div class="inv-cta reveal">
+        <div>
+          <h3 class="serif-md" data-i18n="inv.cta.t">호실별 수익 조건을 상담으로 확인하십시오</h3>
+          <p data-i18n="inv.cta.d">관심 호실과 운용 방식을 알려주시면 적용 가능한 조건과 잔여 여부를 담당자가 개별 안내합니다.</p>
+        </div>
+        <a class="btn-solid" href="#enquire" data-i18n="inv.cta">수익 조건 상담하기</a>
+      </div>
+      <p class="note" data-i18n="inv.disclaimer">이 섹션의 수치는 임대 수익·운용 제안 자료를 근거로 한 예시이며 투자 권유가 아닙니다. 최종 조건은 계약서와 상담 시점의 공식 자료를 기준으로 확인하십시오.</p>
+    </div>
+  </section>
+
+  <!-- ========== 08 LOCATION ========== -->
   <section class="section location" id="location">
     <div class="wrap">
       <header class="sec-head reveal">
-        <span class="sec-num">07 — <span data-i18n="sec.location">LOCATION</span></span>
+        <span class="sec-num">08 — <span data-i18n="sec.location">LOCATION</span></span>
         <h2 class="serif-lg" data-i18n="location.title">두 개의 역,<br>하나의 강남</h2>
         <p class="lead" data-i18n="location.lead">9호선 언주역과 수인분당선·9호선 선정릉역. 봉은사로와 언주로가 교차하는 코너에서 강남의 업무·문화·의료 인프라가 도보권에 놓입니다.</p>
       </header>
@@ -586,7 +817,7 @@
     <div class="wrap">
       <div class="enq-grid">
         <div class="enq-copy reveal">
-          <span class="sec-num">08 — <span data-i18n="sec.enquire">ENQUIRE</span></span>
+          <span class="sec-num">09 — <span data-i18n="sec.enquire">ENQUIRE</span></span>
           <h2 class="serif-lg" data-i18n="enquire.title">BLACK을 직접<br>경험하는 시간</h2>
           <p class="lead" data-i18n="enquire.lead">예약 고객을 위한 프라이빗 안내를 준비합니다. 가능한 호실과 조건은 담당자가 개별적으로 안내합니다.</p>
           <div class="enq-contact">
@@ -731,6 +962,6 @@
   <button type="button" class="lb-nav lb-next" id="lbNext" aria-label="다음">›</button>
 </div>
 
-<script src="app.js?v=20261122a"></script>
+<script src="app.js?v=20261122b"></script>
 </body>
 </html>

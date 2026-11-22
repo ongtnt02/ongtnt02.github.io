@@ -13,6 +13,7 @@
       "preview.bar": "미리보기 페이지 · 상지카일룸(주)의 공식 홈페이지가 아닙니다",
       "nav.overview": "개요", "nav.architecture": "건축", "nav.residences": "타입",
       "nav.gallery": "갤러리", "nav.materials": "마감재", "nav.amenities": "커뮤니티",
+      "nav.investment": "투자",
       "nav.location": "입지", "nav.cta": "방문 예약",
 
       "hero.eyebrow": "SEOUL · GANGNAM · YEOKSAM-DONG",
@@ -122,6 +123,106 @@
       "am.s5": "반려동물 케어", "am.s6": "물품 보관 · 메일룸", "am.s7": "마켓 · 공동구매", "am.s8": "홈스타일링",
       "amenities.note": "커뮤니티와 라이프 서비스는 인·허가 및 협의에 따라 품목·명칭·운영 범위가 변경될 수 있습니다. 현재 운영 여부는 상담 시 확인해 주십시오.",
 
+      "sec.investment": "투자",
+      "inv.title": "임대 수익과<br>운용의 구조",
+      "inv.lead": "임대 수익과 운용 방식은 소유 시점과 자금 계획에 따라 달라집니다. 운영 자료로 수요를 살펴보고, 세 가지 운용 방식과 지급률, 호실별 분양가를 순서대로 확인하십시오.",
+
+      "inv.perf.t": "운영자료로 살펴보는 이용 수요",
+      "inv.perf.sub": "11개 호실 · 1~6월 예약 기준 운영 현황",
+      "inv.perf.stat1.v": "18.06억원",
+      "inv.perf.stat1": "6개월 예약 기준 매출 합계",
+      "inv.perf.stat2.v": "약 91.7%",
+      "inv.perf.stat2": "월별 객실점유율 단순평균",
+      "inv.perf.cap": "월별 예약 기준 매출과 객실점유율",
+      "inv.perf.unit": "금액 단위: 원 · 점유율은 예약 기준",
+      "inv.perf.caution.t": "매출과 투자자 수익은 다릅니다",
+      "inv.perf.caution.1": "예약 기준 매출에는 인건비·관리비·청소비·수수료·세금 등 운영에 필요한 비용이 반영되지 않았습니다. 비용을 차감한 순이익과 투자자에게 지급되는 금액은 별도로 확인해야 합니다.",
+      "inv.perf.caution.2": "예약 기준 매출에는 미래 예약이 포함될 수 있습니다. 확정 매출은 정산서와 입금내역으로 확인해야 합니다.",
+      "inv.perf.caution.3": "이 수치는 개별 호실의 미래 수익률을 보장하지 않습니다.",
+
+      "inv.plans.t": "세 가지 운용 방식",
+      "inv.plans.sub": "먼저 소유할지, 나중에 매입을 선택할지 비교하십시오. 아래는 제안 조건이며, 호실별 적용 가능 여부와 최종 약정은 계약 전에 확인합니다.",
+      "inv.f.purpose": "목적", "inv.f.initial": "최초 납입", "inv.f.title": "소유권",
+      "inv.f.rate": "기본 지급률", "inv.f.end": "종료 시",
+      "inv.plan1.t": "직접매입형", "inv.plan1.tag": "분양가 100% 납입 · 즉시 소유",
+      "inv.plan1.purpose": "소유권 확보와 운영수익",
+      "inv.plan1.initial": "분양가의 100%",
+      "inv.plan1.title": "매매 완료 시 이전",
+      "inv.plan1.rate": "실제 납입금의 연 7%",
+      "inv.plan1.end": "고객이 계속 보유 · 매매대금 반환 없음",
+      "inv.plan2.t": "소유권 선이전형", "inv.plan2.tag": "80% 납입으로 먼저 소유",
+      "inv.plan2.purpose": "80%로 먼저 소유, 잔금은 추후 정산",
+      "inv.plan2.initial": "분양가의 80%",
+      "inv.plan2.title": "80% 납부 시 이전 · 미납 잔금 20%에 회사 명의 1순위 근저당",
+      "inv.plan2.rate": "실제 납입금의 연 6% · 잔금 완납 시 연 7%",
+      "inv.plan2.end": "잔금·담보·소유권 정산, 별도 약정에 따름",
+      "inv.plan3.t": "매입선택형 장기운용", "inv.plan3.tag": "80% 보증금으로 운용 후 매입 선택",
+      "inv.plan3.purpose": "보증금으로 운용 후 추후 매입 선택",
+      "inv.plan3.initial": "분양가의 80% (보증금)",
+      "inv.plan3.title": "회사 보유 · 매입 선택 시 잔금 20% 정산 후 이전",
+      "inv.plan3.rate": "보증금의 연 6%",
+      "inv.plan3.end": "매입 또는 보증금 정산 (별도 약정)",
+      "inv.plans.callout": "80% 납입 후 4년 이내 잔금을 정산하면, 소유권 선이전형은 회사 근저당을 말소하고 매입선택형 장기운용은 현 분양가로 소유권을 이전합니다. 전액 납부를 완료한 이후에는 연 7%가 적용됩니다. 종료 처리는 별도 약정에 따릅니다.",
+      "inv.plans.care.t": "투자금 보호를 위한 공통 확인",
+      "inv.plans.care.1": "회사 명의 근저당은 회사의 잔금 회수용입니다. 고객이 낸 80%나 수익금을 보호하는 담보가 아니므로, 고객의 권리 보호와 구분해 약정합니다.",
+      "inv.plans.care.2": "담보가치는 분양가가 아닌 보수적인 처분 예상액으로 검토합니다. 선순위 권리·임차보증금·처분비용을 차감한 회수 가능액을 확인하며, 1순위 담보도 원금 전액 회수를 보장하지 않습니다.",
+      "inv.plans.care.3": "반환 재원과 수익 지급 재원을 분리해 확인합니다. 반환 대기기간의 7%는 대기 보상이며 원금 보호 장치가 아닙니다. 소유권을 먼저 돌려준 뒤 반환금을 기다리는 정산은 피합니다.",
+      "inv.plans.care.4": "매입선택형 장기운용은 고객 반환채권을 담보하기 위한 1순위 근저당 또는 담보신탁 1순위 우선수익권 설정을 검토·약정합니다. 위 보호 장치는 검토·약정할 조건이며, 설정 완료나 보증 확정을 뜻하지 않습니다.",
+      "inv.plans.care.5": "등기부·담보계약·반환계획을 확인한 후 계약하고, 임대차·운영 관계도 별도로 명시합니다.",
+      "inv.plans.care.6": "직접매입형은 기존 담보 말소를 확인하고, 수익금이 지급되지 않을 경우 운영계약 종료와 호실 인도 절차를 약정합니다. 매입선택형 장기운용의 반환은 반환금 지급과 소유권·담보 정산을 동시에 처리합니다.",
+      "inv.plans.note": "수익 지급과 자금 회수는 최종 계약조건 및 지급 주체의 이행 능력에 따라 달라집니다. 외국인 취득 규정과 실거주 요건에 따라 적용 가능 여부를 확인해야 합니다.",
+
+      "inv.rates.t": "7% · 6.5% · 6%, 선택에 따라",
+      "inv.rates.sub": "지급률보다 먼저 소유 여부와 자금이 필요한 시점을 정합니다. 수익률은 연율이며, 각 단계의 지급률은 중복 적용하지 않습니다.",
+      "inv.rate1.t": "직접매입 · 잔금 완납",
+      "inv.rate1.d": "구매대금 전액을 납부하고 소유권 이전을 마친 고객. 소유권 선이전형의 잔금 정산 또는 매입선택형 장기운용의 매매전환 후 총 납입금에 적용합니다.",
+      "inv.rate2.t": "80% 납입 단계",
+      "inv.rate2.d": "잔금 정산 전 소유권 선이전형 고객, 또는 매입 선택 전 매입선택형 장기운용 고객. 실제 납입금 또는 보증금에 연 6%를 적용합니다.",
+      "inv.rate3.t": "자발적 유지",
+      "inv.rate3.d": "종료·반환 선택권이 약정된 고객이 자발적으로 유지를 선택한 경우. 별도 합의에 따라 미반환금 기준 연 6.5%를 적용합니다.",
+      "inv.rate4.t": "정식 반환 신청 후",
+      "inv.rate4.d": "별도 약정에 따른 유효한 반환 신청 후 미반환금에 적용합니다. 6개월·4년 기한 적용과 소유권·담보 정산은 종료 약정에 정합니다.",
+      "inv.rates.note": "소유권 선이전 자체로 7%가 적용되지는 않습니다. 잔금 완납 및 운영 약정이 기준입니다.",
+
+      "inv.rooms.t": "호실별 분양가와 예상 수익금",
+      "inv.rooms.sub": "80% 플랜은 소유권 선이전형과 매입선택형 장기운용 모두에 적용됩니다. 현재 분양 가능 여부와 최종 계약조건은 상담 시 확인해 주십시오.",
+      "inv.rooms.tab.apt": "공동주택 12호실",
+      "inv.rooms.tab.ph": "펜트하우스 2호실",
+      "inv.rooms.tab.off": "오피스텔 3호실",
+      "inv.rooms.unit": "금액 단위: 원 · 수익금은 1년 기준",
+      "inv.th.unit": "호실", "inv.th.sale": "분양면적", "inv.th.excl": "전용면적",
+      "inv.th.price": "분양가", "inv.th.inc7": "연 7% 수익금",
+      "inv.th.inv80": "80% 투자금", "inv.th.inc6": "연 6% 수익금",
+      "inv.area.unknown": "확인 필요*",
+      "inv.rooms.note.apt": "소유권 선이전형은 먼저 소유권을 이전한 뒤 잔금 담보를 설정하고, 매입선택형 장기운용은 잔금 정산 시 소유권을 이전합니다.",
+      "inv.rooms.note.ph": "* 1902호의 확정 면적은 별도 확인이 필요합니다. 80% 플랜은 위 공동주택과 동일하게 적용됩니다.",
+      "inv.rooms.note.off": "오피스텔 분양가는 부가가치세 포함 금액입니다. 면적의 계약상 구분과 산정 범위는 계약 전 확인해 주십시오.",
+      "inv.rooms.calc": "직접매입형 수익금 = 분양가 × 7% / 80% 납입 단계 수익금 = 실제 납입금 × 6%. 세금·비용 공제 전 단순 계산이며 잔금·종료·지급조건은 별도 약정에 따릅니다.",
+
+      "inv.ex.t": "30억원 호실로 보는 금액 예시",
+      "inv.ex.sub": "실제 입금액 기준, 세금·비용 공제 전 단순 계산입니다. 월 금액은 연간 금액의 12분의 1이며, 실제 지급일과 일할 계산 방식은 계약서에 정합니다.",
+      "inv.ex.th.cat": "구분", "inv.ex.th.basis": "계산 기준",
+      "inv.ex.th.year": "연간 지급액", "inv.ex.th.month": "월 환산액",
+      "inv.ex.r1": "직접매입형 7%", "inv.ex.b1": "30억원 × 7%", "inv.ex.y1": "2억 1,000만원", "inv.ex.mo1": "1,750만원",
+      "inv.ex.r2": "80% 납입 6%", "inv.ex.b2": "24억원 × 6%", "inv.ex.y2": "1억 4,400만원", "inv.ex.mo2": "1,200만원",
+      "inv.ex.r3": "유지 6.5%", "inv.ex.b3": "24억원 × 6.5%", "inv.ex.y3": "1억 5,600만원", "inv.ex.mo3": "1,300만원",
+      "inv.ex.r4": "반환 대기 7%", "inv.ex.b4": "24억원 × 7%", "inv.ex.y4": "1억 6,800만원", "inv.ex.mo4": "1,400만원",
+      "inv.exA.t": "예시 A · 장기운용 2년 후 매입 선택",
+      "inv.exA.1": "첫 2년: 24억원 × 6% × 2년 = 2억 8,800만원",
+      "inv.exA.2": "잔금 6억원 납부·소유권 이전 후 2년: 30억원 × 7% × 2년 = 4억 2,000만원",
+      "inv.exA.sum": "4년 지급액 합계 7억 800만원 + 부동산 보유",
+      "inv.exB.t": "예시 B · 장기운용 유지 후 약정에 따른 반환",
+      "inv.exB.1": "첫 2년 6%: 2억 8,800만원",
+      "inv.exB.2": "다음 1년 6.5%: 1억 5,600만원",
+      "inv.exB.3": "반환 신청 후 6개월 7%: 8,400만원",
+      "inv.exB.sum": "3년 6개월 지급액 합계 5억 2,800만원 + 납입금 24억원 반환",
+      "inv.ex.note": "비교 예시는 최초 계약일부터 최대 4년의 지급기간을 가정합니다. 중간에 매입해도 지급기간이 새로 4년 시작되는 것으로 계산하지 않았습니다. 실제 계약기간·지급 이행·자산가격에 따라 결과가 달라집니다.",
+
+      "inv.cta.t": "호실별 수익 조건을 상담으로 확인하십시오",
+      "inv.cta.d": "관심 호실과 운용 방식을 알려주시면 적용 가능한 조건과 잔여 여부를 담당자가 개별 안내합니다.",
+      "inv.cta": "수익 조건 상담하기",
+      "inv.disclaimer": "이 섹션의 수치는 임대 수익·운용 제안 자료를 근거로 한 예시이며 투자 권유가 아닙니다. 최종 조건은 계약서와 상담 시점의 공식 자료를 기준으로 확인하십시오.",
+
       "sec.location": "입지",
       "location.title": "두 개의 역,<br>하나의 강남",
       "location.lead": "9호선 언주역과 수인분당선·9호선 선정릉역. 봉은사로와 언주로가 교차하는 코너에서 강남의 업무·문화·의료 인프라가 도보권에 놓입니다.",
@@ -204,6 +305,7 @@
       "preview.bar": "Preview page · not the official website of Sangji Caelum Co., Ltd.",
       "nav.overview": "Overview", "nav.architecture": "Architecture", "nav.residences": "Residences",
       "nav.gallery": "Gallery", "nav.materials": "Materials", "nav.amenities": "Amenities",
+      "nav.investment": "Investment",
       "nav.location": "Location", "nav.cta": "Book a visit",
 
       "hero.eyebrow": "SEOUL · GANGNAM · YEOKSAM-DONG",
@@ -313,6 +415,106 @@
       "am.s5": "Pet care", "am.s6": "Storage · mailroom", "am.s7": "Market · group buying", "am.s8": "Home styling",
       "amenities.note": "Amenities and services may change in scope or name following approvals and consultation. Please confirm current operation at the time of enquiry.",
 
+      "sec.investment": "INVESTMENT",
+      "inv.title": "Rental income,<br>and how it is structured",
+      "inv.lead": "Income and holding structure depend on when you take ownership and how your capital is planned. Review the operating record, the three structures, the payout rates and the prices by unit in order.",
+
+      "inv.perf.t": "Demand seen in the operating data",
+      "inv.perf.sub": "11 units · operating record on a booking basis, January to June",
+      "inv.perf.stat1.v": "KRW 1.806B",
+      "inv.perf.stat1": "Total booking-basis revenue over six months",
+      "inv.perf.stat2.v": "approx. 91.7%",
+      "inv.perf.stat2": "Simple average of monthly occupancy",
+      "inv.perf.cap": "Monthly booking-basis revenue and occupancy",
+      "inv.perf.unit": "Amounts in KRW · occupancy on a booking basis",
+      "inv.perf.caution.t": "Revenue is not investor income",
+      "inv.perf.caution.1": "Booking-basis revenue does not include the costs of operating: staffing, management, cleaning, commissions and taxes. Net income after those costs, and the amount paid to an investor, must be confirmed separately.",
+      "inv.perf.caution.2": "Booking-basis revenue may include future bookings. Confirmed revenue must be verified against settlement statements and bank records.",
+      "inv.perf.caution.3": "These figures do not guarantee the future return of any individual unit.",
+
+      "inv.plans.t": "Three holding structures",
+      "inv.plans.sub": "Compare taking ownership first with choosing a purchase later. The terms below are proposals; availability for each unit and the final agreement are confirmed before signing.",
+      "inv.f.purpose": "Purpose", "inv.f.initial": "Initial payment", "inv.f.title": "Title",
+      "inv.f.rate": "Base payout", "inv.f.end": "At maturity",
+      "inv.plan1.t": "Direct purchase", "inv.plan1.tag": "100% of the price, owned outright",
+      "inv.plan1.purpose": "Ownership and operating income",
+      "inv.plan1.initial": "100% of the sale price",
+      "inv.plan1.title": "Transferred on completion of the sale",
+      "inv.plan1.rate": "7% a year on the amount actually paid",
+      "inv.plan1.end": "The owner keeps the unit; no return of the purchase price",
+      "inv.plan2.t": "Advance transfer of title", "inv.plan2.tag": "Own after paying 80%",
+      "inv.plan2.purpose": "Own first with 80%, settle the balance later",
+      "inv.plan2.initial": "80% of the sale price",
+      "inv.plan2.title": "Transferred at 80% payment, with a first-priority mortgage in the company's name over the unpaid 20%",
+      "inv.plan2.rate": "6% a year on the amount paid · 7% once the balance is settled",
+      "inv.plan2.end": "Balance, security and title settled under a separate agreement",
+      "inv.plan3.t": "Long-term hold with purchase option", "inv.plan3.tag": "Hold on an 80% deposit, decide on purchase later",
+      "inv.plan3.purpose": "Hold on a deposit, choose a purchase later",
+      "inv.plan3.initial": "80% of the sale price (deposit)",
+      "inv.plan3.title": "Held by the company; transferred once the 20% balance is settled on exercise of the option",
+      "inv.plan3.rate": "6% a year on the deposit",
+      "inv.plan3.end": "Purchase, or settlement of the deposit (separate agreement)",
+      "inv.plans.callout": "Where the balance is settled within four years of paying 80%, the advance-transfer structure releases the company's mortgage, and the long-term hold transfers title at the then-current sale price. Once the price is paid in full, 7% a year applies. Completion is handled under a separate agreement.",
+      "inv.plans.care.t": "Common checks for protecting your capital",
+      "inv.plans.care.1": "A mortgage in the company's name secures the company's collection of the balance. It does not secure the 80% you paid or your income, so it is agreed separately from the protection of your own rights.",
+      "inv.plans.care.2": "Collateral value is reviewed on a conservative expected disposal value, not on the sale price. Recovery is checked after deducting prior-ranking rights, tenant deposits and disposal costs, and even first-priority security does not guarantee the full return of principal.",
+      "inv.plans.care.3": "Funds for returning capital and funds for paying income are checked separately. The 7% during a waiting period for return is compensation for waiting, not a protection of principal. Arrangements that hand over title first and leave the money to be awaited are avoided.",
+      "inv.plans.care.4": "For the long-term hold, a first-priority mortgage or a first-priority beneficiary right under a collateral trust is reviewed and agreed to secure the investor's claim for return. These protections are conditions to be reviewed and agreed; they do not mean they are in place or guaranteed.",
+      "inv.plans.care.5": "Sign only after checking the register, the security agreement and the return plan, and state the lease and operating arrangements separately.",
+      "inv.plans.care.6": "For a direct purchase, existing security is confirmed released, and where income is not paid the agreement provides for ending the operating contract and handing over the unit. On the long-term hold, a return settles the payment, the title and the security at the same time.",
+      "inv.plans.note": "Payment of income and the return of funds depend on the final contract terms and on the paying party's ability to perform. Eligibility may also depend on foreign-ownership rules and residence requirements.",
+
+      "inv.rates.t": "7% · 6.5% · 6%, by choice",
+      "inv.rates.sub": "Ownership and the timing of your capital needs come before any rate. Rates are annual, and the rate at each stage is not applied together with another.",
+      "inv.rate1.t": "Direct purchase · balance paid",
+      "inv.rate1.d": "For an investor who has paid the full purchase price and completed the transfer of title. Applies to the total amount paid after the balance is settled under advance transfer, or after the long-term hold converts to a sale.",
+      "inv.rate2.t": "Stage of 80% payment",
+      "inv.rate2.d": "For an advance-transfer investor before the balance is settled, or a long-term hold investor before choosing to purchase. 6% a year applies to the amount actually paid or to the deposit.",
+      "inv.rate3.t": "Voluntary continuation",
+      "inv.rate3.d": "Where an investor with an agreed right to exit or request a return voluntarily chooses to continue. By separate agreement, 6.5% a year applies to the amount not yet returned.",
+      "inv.rate4.t": "After a formal request for return",
+      "inv.rate4.d": "Applies to the amount not yet returned after a valid request made under a separate agreement. The six-month and four-year limits and the settlement of title and security are set in the exit agreement.",
+      "inv.rates.note": "Advance transfer of title alone does not bring 7%. It applies once the balance is paid in full and on the operating terms.",
+
+      "inv.rooms.t": "Sale price and expected income by unit",
+      "inv.rooms.sub": "The 80% plan applies to both the advance-transfer and the long-term hold structures. Current availability and final terms are confirmed in consultation.",
+      "inv.rooms.tab.apt": "Residences · 12 units",
+      "inv.rooms.tab.ph": "Penthouses · 2 units",
+      "inv.rooms.tab.off": "Officetels · 3 units",
+      "inv.rooms.unit": "Amounts in KRW · income for one year",
+      "inv.th.unit": "Unit", "inv.th.sale": "Sale area", "inv.th.excl": "Exclusive area",
+      "inv.th.price": "Sale price", "inv.th.inc7": "Income at 7% a year",
+      "inv.th.inv80": "80% investment", "inv.th.inc6": "Income at 6% a year",
+      "inv.area.unknown": "To be confirmed*",
+      "inv.rooms.note.apt": "Under advance transfer, title moves first and security is then set over the balance; under the long-term hold, title moves when the balance is settled.",
+      "inv.rooms.note.ph": "* The confirmed area of unit 1902 must be checked separately. The 80% plan applies as for the residences above.",
+      "inv.rooms.note.off": "Officetel prices include VAT. The contractual basis and scope of their areas should be confirmed before signing.",
+      "inv.rooms.calc": "Direct purchase income = sale price × 7%; 80% stage income = amount paid × 6%. Simple figures before tax and costs; balance, exit and payout terms follow a separate agreement.",
+
+      "inv.ex.t": "Example: a KRW 3.0B unit",
+      "inv.ex.sub": "Based on the amount actually paid, before tax and costs. The monthly figure is one twelfth of the annual amount; payment dates and pro-rating are set in the contract.",
+      "inv.ex.th.cat": "Case", "inv.ex.th.basis": "Basis",
+      "inv.ex.th.year": "Annual payout", "inv.ex.th.month": "Per month",
+      "inv.ex.r1": "Direct purchase 7%", "inv.ex.b1": "KRW 3.0B × 7%", "inv.ex.y1": "KRW 210M", "inv.ex.mo1": "KRW 17.5M",
+      "inv.ex.r2": "80% paid, 6%", "inv.ex.b2": "KRW 2.4B × 6%", "inv.ex.y2": "KRW 144M", "inv.ex.mo2": "KRW 12M",
+      "inv.ex.r3": "Continuation 6.5%", "inv.ex.b3": "KRW 2.4B × 6.5%", "inv.ex.y3": "KRW 156M", "inv.ex.mo3": "KRW 13M",
+      "inv.ex.r4": "Awaiting return 7%", "inv.ex.b4": "KRW 2.4B × 7%", "inv.ex.y4": "KRW 168M", "inv.ex.mo4": "KRW 14M",
+      "inv.exA.t": "Example A — purchase after two years of long-term hold",
+      "inv.exA.1": "First two years: KRW 2.4B × 6% × 2 years = KRW 288M",
+      "inv.exA.2": "After paying the KRW 600M balance and taking title, two years: KRW 3.0B × 7% × 2 years = KRW 420M",
+      "inv.exA.sum": "Four-year payout KRW 708M + ownership of the property",
+      "inv.exB.t": "Example B — hold, then return under the agreement",
+      "inv.exB.1": "First two years at 6%: KRW 288M",
+      "inv.exB.2": "Next year at 6.5%: KRW 156M",
+      "inv.exB.3": "Six months at 7% after the return request: KRW 84M",
+      "inv.exB.sum": "Three years and six months: KRW 528M + return of the KRW 2.4B paid",
+      "inv.ex.note": "The examples assume a payout period of up to four years from the first contract date. Buying in mid-term is not treated as restarting a new four-year period. Actual results depend on the contract term, performance of payments and asset prices.",
+
+      "inv.cta.t": "Confirm the income terms for your unit",
+      "inv.cta.d": "Tell us the unit and structure you are considering, and our team will explain the terms available and current availability.",
+      "inv.cta": "Discuss income terms",
+      "inv.disclaimer": "The figures in this section are examples based on the rental income and operating proposal; they are not investment advice. Final terms are confirmed in the contract and the official materials at the time of consultation.",
+
       "sec.location": "LOCATION",
       "location.title": "Two stations,<br>one Gangnam",
       "location.lead": "Eonju Station on Line 9, and Seonjeongneung Station on the Suin–Bundang and Line 9. From this corner where Bongeunsa-ro meets Eonju-ro, the offices, culture and hospitals of Gangnam sit within walking distance.",
@@ -395,6 +597,7 @@
       "preview.bar": "预览页面 · 非相地Caelum（株）官方网站",
       "nav.overview": "概览", "nav.architecture": "建筑", "nav.residences": "户型",
       "nav.gallery": "图库", "nav.materials": "材质", "nav.amenities": "配套",
+      "nav.investment": "投资",
       "nav.location": "位置", "nav.cta": "预约参观",
 
       "hero.eyebrow": "SEOUL · GANGNAM · YEOKSAM-DONG",
@@ -503,6 +706,106 @@
       "am.s1": "家常料理配送", "am.s2": "家政服务", "am.s3": "礼宾车 · 机场接送", "am.s4": "名品洗涤",
       "am.s5": "宠物照护", "am.s6": "物品寄存 · 邮件室", "am.s7": "市集 · 团购", "am.s8": "家居造型",
       "amenities.note": "配套与生活服务可能因审批与协商调整项目、名称与运营范围。当前运营情况请在咨询时确认。",
+
+      "sec.investment": "投资",
+      "inv.title": "租赁收益<br>与运营结构",
+      "inv.lead": "租赁收益与运营方式，取决于取得所有权的时点与资金安排。请先透过运营资料了解需求，再依次查看三种运营方式、支付率与各房号销售价。",
+
+      "inv.perf.t": "从运营资料看使用需求",
+      "inv.perf.sub": "11 间客房 · 1~6 月预订基准运营情况",
+      "inv.perf.stat1.v": "18.06 亿韩元",
+      "inv.perf.stat1": "6 个月预订基准营业额合计",
+      "inv.perf.stat2.v": "约 91.7%",
+      "inv.perf.stat2": "月度客房入住率简单平均",
+      "inv.perf.cap": "月度预订基准营业额与入住率",
+      "inv.perf.unit": "金额单位：韩元 · 入住率按预订基准",
+      "inv.perf.caution.t": "营业额与投资者收益不同",
+      "inv.perf.caution.1": "预订基准营业额未扣除人工、管理、清洁、手续费与税金等运营成本。扣除成本后的净利与支付给投资者的金额需另行确认。",
+      "inv.perf.caution.2": "预订基准营业额可能包含未来预订。已确认营业额请以结算单与入账记录为准。",
+      "inv.perf.caution.3": "上述数据不保证个别房号的未来收益率。",
+
+      "inv.plans.t": "三种运营方式",
+      "inv.plans.sub": "请先比较“先取得所有权”与“日后选择买入”。以下为建议条件，个别房号的适用性与最终约定须在签约前确认。",
+      "inv.f.purpose": "目的", "inv.f.initial": "首次缴纳", "inv.f.title": "所有权",
+      "inv.f.rate": "基本支付率", "inv.f.end": "结束时",
+      "inv.plan1.t": "直接购买型", "inv.plan1.tag": "缴纳房价 100% · 即刻持有",
+      "inv.plan1.purpose": "取得所有权与运营收益",
+      "inv.plan1.initial": "房价的 100%",
+      "inv.plan1.title": "买卖完成时转移",
+      "inv.plan1.rate": "按实际缴纳金额年 7%",
+      "inv.plan1.end": "客户继续持有 · 不退还买卖价款",
+      "inv.plan2.t": "所有权先转移型", "inv.plan2.tag": "缴纳 80% 即先取得所有权",
+      "inv.plan2.purpose": "以 80% 先取得所有权，余款日后结算",
+      "inv.plan2.initial": "房价的 80%",
+      "inv.plan2.title": "缴纳 80% 时转移 · 未付余款 20% 上设定公司名义第一顺位抵押权",
+      "inv.plan2.rate": "按实际缴纳金额年 6% · 余款付清后年 7%",
+      "inv.plan2.end": "余款、担保与所有权另行约定结算",
+      "inv.plan3.t": "买入选择型长期运营", "inv.plan3.tag": "以 80% 保证金运营后选择买入",
+      "inv.plan3.purpose": "以保证金运营，日后选择买入",
+      "inv.plan3.initial": "房价的 80%（保证金）",
+      "inv.plan3.title": "由公司持有 · 行使买入时结算余款 20% 后转移",
+      "inv.plan3.rate": "按保证金年 6%",
+      "inv.plan3.end": "买入或保证金结算（另行约定）",
+      "inv.plans.callout": "缴纳 80% 后四年内结算余款时，所有权先转移型将解除公司抵押权，买入选择型长期运营则按现行房价转移所有权。全额付清后适用年 7%。终止处理依另行约定。",
+      "inv.plans.care.t": "为保护投资资金的共同确认事项",
+      "inv.plans.care.1": "公司名义的抵押权用于公司收回余款，并非保障客户已缴 80% 或收益的担保，须与客户自身权利保护区分约定。",
+      "inv.plans.care.2": "担保价值不以房价、而以保守的处置预计额评估。须确认扣除优先权利、租赁保证金与处置费用后的可回收金额；即使第一顺位担保也不保证全额收回本金。",
+      "inv.plans.care.3": "返还资金与收益支付资金须分开确认。返还等待期的 7% 属于等待补偿，并非本金保护措施。应避免先交出所有权、再等待返还金的结算方式。",
+      "inv.plans.care.4": "买入选择型长期运营，将为客户返还债权审查并约定第一顺位抵押权或担保信托第一顺位优先受益权。上述保护措施属审查与约定条件，并不表示已设定完成或已获保证。",
+      "inv.plans.care.5": "确认登记簿、担保合同与返还计划后再签约，租赁与运营关系亦须另行明示。",
+      "inv.plans.care.6": "直接购买型在确认原有担保注销后签约，并约定收益未支付时终止运营合同与房屋交付程序。买入选择型长期运营的返还，将同时处理返还金支付与所有权、担保结算。",
+      "inv.plans.note": "收益支付与资金回收取决于最终合同条件及支付主体的履约能力。外国人取得规定与实际居住要求也可能影响适用与否。",
+
+      "inv.rates.t": "7% · 6.5% · 6%，按选择而定",
+      "inv.rates.sub": "在考虑支付率之前，请先确定是否持有以及何时需要资金。收益率为年利率，各阶段支付率不重复适用。",
+      "inv.rate1.t": "直接购买 · 余款付清",
+      "inv.rate1.d": "已全额支付购买价款并完成所有权转移的客户。所有权先转移型的余款结算或买入选择型转为买卖后，适用总缴纳金额。",
+      "inv.rate2.t": "80% 缴纳阶段",
+      "inv.rate2.d": "尚未结算余款的所有权先转移型客户，或尚未选择买入的长期运营客户。按实际缴纳金额或保证金适用年 6%。",
+      "inv.rate3.t": "自愿续持",
+      "inv.rate3.d": "已约定终止与返还选择权的客户，自愿选择继续持有时。经另行协商，按未返还金额适用年 6.5%。",
+      "inv.rate4.t": "正式申请返还后",
+      "inv.rate4.d": "依另行约定提出有效返还申请后，适用于未返还金额。6 个月与 4 年期限及所有权、担保结算依终止约定。",
+      "inv.rates.note": "仅所有权先转移本身并不适用 7%。须以余款付清与运营约定为准。",
+
+      "inv.rooms.t": "各房号售价与预计收益",
+      "inv.rooms.sub": "80% 方案同时适用于所有权先转移型与买入选择型长期运营。当前可售情况与最终合同条件请在咨询时确认。",
+      "inv.rooms.tab.apt": "住宅 12 户",
+      "inv.rooms.tab.ph": "顶层复式 2 户",
+      "inv.rooms.tab.off": "写字楼 3 间",
+      "inv.rooms.unit": "金额单位：韩元 · 收益为 1 年基准",
+      "inv.th.unit": "房号", "inv.th.sale": "销售面积", "inv.th.excl": "专有面积",
+      "inv.th.price": "销售价", "inv.th.inc7": "年 7% 收益",
+      "inv.th.inv80": "80% 投资额", "inv.th.inc6": "年 6% 收益",
+      "inv.area.unknown": "需确认*",
+      "inv.rooms.note.apt": "所有权先转移型先转移所有权，再就余款设定担保；买入选择型长期运营则在结算余款时转移所有权。",
+      "inv.rooms.note.ph": "* 1902 号的确定面积需另行确认。80% 方案与上述住宅相同适用。",
+      "inv.rooms.note.off": "写字楼销售价含增值税。面积的合同划分与计算范围请在签约前确认。",
+      "inv.rooms.calc": "直接购买型收益 = 销售价 × 7%／80% 缴纳阶段收益 = 实际缴纳金额 × 6%。为扣除税金与费用前的简单计算，余款、终止与支付条件依另行约定。",
+
+      "inv.ex.t": "以 30 亿韩元房号为例",
+      "inv.ex.sub": "以实际入账金额为准，为扣除税金与费用前的简单计算。月度金额为年度金额的十二分之一，实际支付日与按日计算方式由合同约定。",
+      "inv.ex.th.cat": "类别", "inv.ex.th.basis": "计算基准",
+      "inv.ex.th.year": "年度支付额", "inv.ex.th.month": "月度折算",
+      "inv.ex.r1": "直接购买型 7%", "inv.ex.b1": "30 亿韩元 × 7%", "inv.ex.y1": "2.1 亿韩元", "inv.ex.mo1": "1,750 万韩元",
+      "inv.ex.r2": "80% 缴纳 6%", "inv.ex.b2": "24 亿韩元 × 6%", "inv.ex.y2": "1.44 亿韩元", "inv.ex.mo2": "1,200 万韩元",
+      "inv.ex.r3": "续持 6.5%", "inv.ex.b3": "24 亿韩元 × 6.5%", "inv.ex.y3": "1.56 亿韩元", "inv.ex.mo3": "1,300 万韩元",
+      "inv.ex.r4": "返还等待 7%", "inv.ex.b4": "24 亿韩元 × 7%", "inv.ex.y4": "1.68 亿韩元", "inv.ex.mo4": "1,400 万韩元",
+      "inv.exA.t": "例 A · 长期运营 2 年后选择买入",
+      "inv.exA.1": "前 2 年：24 亿韩元 × 6% × 2 年 = 2.88 亿韩元",
+      "inv.exA.2": "缴纳余款 6 亿韩元并转移所有权后 2 年：30 亿韩元 × 7% × 2 年 = 4.2 亿韩元",
+      "inv.exA.sum": "4 年支付合计 7.08 亿韩元 + 持有不动产",
+      "inv.exB.t": "例 B · 长期运营续持后按约定返还",
+      "inv.exB.1": "前 2 年 6%：2.88 亿韩元",
+      "inv.exB.2": "随后 1 年 6.5%：1.56 亿韩元",
+      "inv.exB.3": "申请返还后 6 个月 7%：8,400 万韩元",
+      "inv.exB.sum": "3 年 6 个月支付合计 5.28 亿韩元 + 返还已缴 24 亿韩元",
+      "inv.ex.note": "比较示例假设自最初签约日起最长 4 年的支付期。中途买入亦未按重新开始 4 年计算。实际结果取决于合同期限、支付履行与资产价格。",
+
+      "inv.cta.t": "请以咨询确认各房号的收益条件",
+      "inv.cta.d": "告知您关注的房号与运营方式，负责人将个别说明适用条件与剩余情况。",
+      "inv.cta": "咨询收益条件",
+      "inv.disclaimer": "本部分数值为依据租赁收益与运营提案资料的示例，不构成投资建议。最终条件请以合同文件及咨询时的官方资料为准。",
 
       "sec.location": "位置",
       "location.title": "两座车站，<br>一个江南",
@@ -728,8 +1031,51 @@
     { src: "assets/images/life-detail.jpg", w: 900, h: 601, cap: ["디테일", "Detail", "细节"] }
   ];
 
+  /* ----------------------------- 임대 수익 데이터 ----------------------------- */
+  const INVEST = {
+    months: [
+      { rev: 253444416, occ: 87 },
+      { rev: 250765012, occ: 80 },
+      { rev: 332858615, occ: 96 },
+      { rev: 376749816, occ: 96 },
+      { rev: 288886587, occ: 96 },
+      { rev: 303581627, occ: 95 }
+    ],
+    rooms: {
+      apt: [
+        { id: "701", sale: 2842499000, saleArea: [85.43, 25.84], excl: [69.65, 21.07] },
+        { id: "902", sale: 5226007500, saleArea: [153.11, 46.32], excl: [124.83, 37.76] },
+        { id: "903", sale: 3080968000, saleArea: [91.66, 27.73], excl: [74.73, 22.61] },
+        { id: "1101", sale: 2931786000, saleArea: [85.43, 25.84], excl: [69.65, 21.07] },
+        { id: "1102", sale: 5306815500, saleArea: [153.11, 46.32], excl: [124.83, 37.76] },
+        { id: "1302", sale: 5387634000, saleArea: [153.11, 46.32], excl: [124.83, 37.76] },
+        { id: "1303", sale: 3176250000, saleArea: [91.66, 27.73], excl: [74.73, 22.61] },
+        { id: "1501", sale: 3024084000, saleArea: [85.43, 25.84], excl: [69.65, 21.07] },
+        { id: "1502", sale: 5468452500, saleArea: [153.11, 46.32], excl: [124.83, 37.76] },
+        { id: "1701", sale: 3065733000, saleArea: [85.43, 25.84], excl: [69.65, 21.07] },
+        { id: "1702", sale: 5549260500, saleArea: [153.11, 46.32], excl: [124.83, 37.76] },
+        { id: "1703", sale: 3122836500, saleArea: [91.66, 27.73], excl: [74.73, 22.61] }
+      ],
+      ph: [
+        { id: "1901", sale: 8500000000, saleArea: [175.02, 52.94], excl: [142.69, 43.16] },
+        { id: "1902", sale: 8500000000, saleArea: null, excl: null }
+      ],
+      off: [
+        { id: "304", sale: 1817300000, saleArea: [72.21, 21.84], excl: [52.03, 15.74] },
+        { id: "602", sale: 1634500000, saleArea: [61.21, 18.51], excl: [44.10, 13.34] },
+        { id: "604", sale: 1928500000, saleArea: [72.21, 21.84], excl: [52.03, 15.74] }
+      ]
+    }
+  };
+
+  const MONTH_LABEL = {
+    ko: ["1월", "2월", "3월", "4월", "5월", "6월"],
+    en: ["Jan", "Feb", "Mar", "Apr", "May", "Jun"],
+    zh: ["1月", "2月", "3月", "4月", "5月", "6月"]
+  };
+
   /* ----------------------------- 상태 ----------------------------- */
-  const state = { lang: "ko", cat: "apt", type: "A", floor: 0, lbIndex: 0 };
+  const state = { lang: "ko", cat: "apt", type: "A", floor: 0, lbIndex: 0, invCat: "apt" };
   const $ = (s, r = document) => r.querySelector(s);
   const $$ = (s, r = document) => Array.from(r.querySelectorAll(s));
 
@@ -775,6 +1121,7 @@
     renderChips();
     renderType();
     renderTable();
+    renderInvest();
     updateGalleryLang();
     if (state.lbIndex !== null && !$("#lightbox").hidden) updateLightbox();
 
@@ -895,6 +1242,98 @@
         renderChips();
         renderType();
         $("#residences").scrollIntoView({ behavior: "smooth", block: "start" });
+      });
+    });
+  }
+
+  /* ----------------------------- 임대 수익 섹션 ----------------------------- */
+  function esc(s) {
+    return String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;")
+      .replace(/"/g, "&quot;").replace(/'/g, "&#39;");
+  }
+
+  function won(n) {
+    const s = Number(n).toLocaleString("en-US");
+    return state.lang === "ko" ? s + "원" : "KRW " + s;
+  }
+
+  function invArea(a) {
+    if (!a) return t("inv.area.unknown");
+    return a[0].toFixed(2) + "㎡<small>(" + a[1].toFixed(2) + t("unit.pyeong").trim() + ")</small>";
+  }
+
+  function renderInvChart() {
+    const box = $("#invChart");
+    if (!box) return;
+    const labels = MONTH_LABEL[state.lang] || MONTH_LABEL.ko;
+    box.innerHTML = INVEST.months.map((m, i) =>
+      "<div class='inv-bar'>" +
+        "<span class='inv-bar-m'>" + labels[i] + "</span>" +
+        "<span class='inv-bar-track'><i style='--w:" + m.occ + "%'></i></span>" +
+        "<span class='inv-bar-occ'>" + m.occ + "%</span>" +
+        "<span class='inv-bar-rev'>" + won(m.rev) + "</span>" +
+      "</div>"
+    ).join("");
+  }
+
+  function renderInvTable() {
+    const body = $("#invTableBody");
+    if (!body) return;
+    const rows = INVEST.rooms[state.invCat] || INVEST.rooms.apt;
+    body.innerHTML = rows.map((r) => {
+      const inv80 = Math.round(r.sale * 0.8);
+      const inc7 = Math.round(r.sale * 0.07);
+      const inc6 = Math.round(inv80 * 0.06);
+      return "<tr>" +
+        "<th scope='row'>" + r.id + "</th>" +
+        "<td data-label='" + esc(t("inv.th.sale")) + "'>" + invArea(r.saleArea) + "</td>" +
+        "<td data-label='" + esc(t("inv.th.excl")) + "'>" + invArea(r.excl) + "</td>" +
+        "<td data-label='" + esc(t("inv.th.price")) + "'>" + won(r.sale) + "</td>" +
+        "<td class='is-gold' data-label='" + esc(t("inv.th.inc7")) + "'>" + won(inc7) + "</td>" +
+        "<td data-label='" + esc(t("inv.th.inv80")) + "'>" + won(inv80) + "</td>" +
+        "<td data-label='" + esc(t("inv.th.inc6")) + "'>" + won(inc6) + "</td>" +
+      "</tr>";
+    }).join("");
+
+    const note = $("#invCatNote");
+    if (note) {
+      const key = "inv.rooms.note." + state.invCat;
+      note.setAttribute("data-i18n", key);
+      note.textContent = t(key);
+    }
+  }
+
+  function renderInvExample() {
+    const body = $("#invExBody");
+    if (!body) return;
+    body.innerHTML = [1, 2, 3, 4].map((n) =>
+      "<tr>" +
+        "<th scope='row'>" + t("inv.ex.r" + n) + "</th>" +
+        "<td data-label='" + esc(t("inv.ex.th.basis")) + "'>" + t("inv.ex.b" + n) + "</td>" +
+        "<td data-label='" + esc(t("inv.ex.th.year")) + "'>" + t("inv.ex.y" + n) + "</td>" +
+        "<td class='is-gold' data-label='" + esc(t("inv.ex.th.month")) + "'>" + t("inv.ex.mo" + n) + "</td>" +
+      "</tr>"
+    ).join("");
+  }
+
+  function renderInvest() {
+    renderInvChart();
+    renderInvTable();
+    renderInvExample();
+  }
+
+  function initInvTabs() {
+    const tabs = $$(".inv-tabs button");
+    if (!tabs.length) return;
+    tabs.forEach((b) => {
+      b.addEventListener("click", () => {
+        state.invCat = b.dataset.invcat;
+        tabs.forEach((x) => {
+          const on = x === b;
+          x.classList.toggle("is-active", on);
+          x.setAttribute("aria-selected", on ? "true" : "false");
+        });
+        renderInvTable();
       });
     });
   }
@@ -1173,6 +1612,7 @@
 
     renderGallery();
     initTypeSwitch();
+    initInvTabs();
     applyLang(state.lang, { url: !!params.get("lang") });
     initHero();
     initHeader();

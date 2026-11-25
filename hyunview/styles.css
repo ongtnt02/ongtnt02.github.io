@@ -923,6 +923,248 @@ section[id] { scroll-margin-top: 62px; }
 .checks { margin-top: 24px; }
 
 /* ------------------------------------------------------------
+   진행 단계 · 일반 지역주택조합 비교
+   ------------------------------------------------------------ */
+.vs {
+  margin-top: 4px;
+  padding: 20px 16px 16px;
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-sm);
+}
+.vs-kicker {
+  display: inline-block;
+  margin-bottom: 10px;
+  padding: 3px 10px;
+  border: 1px solid var(--gold-soft);
+  border-radius: 999px;
+  background: #fdf8ee;
+  color: #8a5a2b;
+  font-size: .7rem;
+  font-weight: 700;
+  letter-spacing: .06em;
+}
+.vs-title {
+  margin: 0 0 8px;
+  font-family: var(--serif);
+  font-size: 1.16rem;
+  line-height: 1.45;
+  color: var(--pine);
+}
+.vs-lede {
+  font-size: .85rem;
+  line-height: 1.8;
+  color: #4d5751;
+}
+.vs-lanes { display: grid; gap: 12px; margin-top: 16px; align-items: start; }
+.lane {
+  padding: 14px 13px 13px;
+  border: 1px solid var(--line-soft);
+  border-radius: 12px;
+  background: #fcfbf6;
+}
+.lane-ours {
+  border-color: #c3d8c8;
+  background: linear-gradient(180deg, #f1f8f3 0%, #fbfdfa 62%);
+  box-shadow: 0 1px 2px rgba(20, 32, 27, .04);
+}
+.lane-head {
+  padding-bottom: 9px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid var(--line-soft);
+}
+.lane-name {
+  font-family: var(--serif);
+  font-size: .98rem;
+  font-weight: 600;
+  line-height: 1.4;
+  color: var(--pine);
+}
+.lane-sub { margin-top: 1px; font-size: .7rem; color: #7b847d; }
+.lane-tag {
+  margin-top: 5px;
+  font-size: .72rem;
+  font-weight: 600;
+  color: #7a4f22;
+}
+.lane-ours .lane-tag { color: #2f5a44; }
+.lane-flow { display: grid; gap: 6px; }
+.chip {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  padding: 8px 9px;
+  border: 1px solid var(--line-soft);
+  border-radius: 9px;
+  background: #fff;
+  font-size: .8rem;
+  line-height: 1.4;
+  color: #38453d;
+}
+.chip-no {
+  flex: 0 0 auto;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 17px;
+  height: 17px;
+  border-radius: 50%;
+  background: var(--sand);
+  color: #6b756d;
+  font-size: .62rem;
+  font-weight: 700;
+}
+.chip-txt { flex: 1 1 auto; word-break: keep-all; }
+.chip-meta {
+  flex: 0 0 auto;
+  font-size: .7rem;
+  color: #8a938c;
+  white-space: nowrap;
+}
+/* 조합원 모집 단계는 금색 띠로 구분 */
+.chip.is-mob { box-shadow: inset 3px 0 0 var(--gold); }
+.chip.is-mob .chip-no { background: var(--gold); color: #fff; }
+.chip.is-end .chip-no { background: var(--pine); color: #fff; }
+/* 완료 · 예정 */
+.chip.is-done { border-color: #d3e2d6; }
+.chip.is-done .chip-meta { color: #4a6b56; }
+.chip-chk {
+  flex: 0 0 auto;
+  padding: 2px 5px;
+  border-radius: 4px;
+  background: var(--moss);
+  color: #fff;
+  font-size: .6rem;
+  font-weight: 700;
+  letter-spacing: .02em;
+}
+.chip-chk.is-wait { background: var(--gold); }
+.chip.is-next {
+  border-color: var(--gold-soft);
+  background: #fdf9f1;
+}
+.chip.is-next .chip-txt { color: #5c4322; font-weight: 600; }
+.chip.is-next .chip-meta { color: #8a5a2b; font-weight: 600; }
+.lane-break {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 8px 0 2px;
+  font-size: .68rem;
+  font-weight: 700;
+  letter-spacing: .04em;
+  color: #8a5a2b;
+  white-space: nowrap;
+}
+.lane-break::before,
+.lane-break::after {
+  content: "";
+  flex: 1 1 auto;
+  height: 1px;
+  background: var(--gold-soft);
+}
+.lane-note {
+  margin-top: 11px;
+  padding-top: 9px;
+  border-top: 1px dashed var(--line);
+  font-size: .76rem;
+  line-height: 1.7;
+  color: #6b756d;
+}
+.lane-note strong { color: #8a5a2b; }
+.lane-ours .lane-note { color: #3f5c4a; }
+.lane-ours .lane-note strong { color: var(--pine); }
+.vs-foot {
+  margin-top: 12px;
+  font-size: .72rem;
+  line-height: 1.7;
+  color: #8a938c;
+}
+
+/* 끝난 절차 · 남은 절차 */
+.stages { display: grid; gap: 18px; margin-top: 24px; }
+.stage-col h3 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0 0 10px;
+  font-family: var(--serif);
+  font-size: 1.04rem;
+  color: var(--pine);
+}
+.stage-count {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 22px;
+  height: 22px;
+  padding: 0 7px;
+  border-radius: 999px;
+  background: var(--moss);
+  color: #fff;
+  font-family: var(--sans);
+  font-size: .72rem;
+  font-weight: 700;
+  letter-spacing: 0;
+}
+.stage-col-next .stage-count { background: var(--gold); }
+.done-list { display: grid; gap: 8px; }
+.done-item {
+  display: flex;
+  gap: 10px;
+  padding: 11px 12px;
+  border: 1px solid var(--line-soft);
+  border-radius: 10px;
+  background: var(--paper);
+}
+.done-chk {
+  flex: 0 0 18px;
+  width: 18px;
+  height: 18px;
+  margin-top: 2px;
+  border-radius: 50%;
+  background: var(--moss);
+  color: #fff;
+  font-size: .64rem;
+  line-height: 18px;
+  text-align: center;
+}
+.done-name { font-size: .86rem; font-weight: 600; line-height: 1.5; color: #23302a; }
+.done-meta { margin-top: 2px; font-size: .74rem; line-height: 1.6; color: #6b756d; }
+.done-meta .src { color: #8a5a2b; }
+.next-list { display: grid; gap: 8px; }
+.next-card {
+  padding: 13px 14px;
+  border: 1px solid var(--gold-soft);
+  border-radius: 10px;
+  background: linear-gradient(180deg, #fdf9f0 0%, #fffdf8 100%);
+}
+.next-step {
+  font-size: .68rem;
+  font-weight: 700;
+  letter-spacing: .06em;
+  color: var(--gold);
+}
+.next-card h4 {
+  margin: 3px 0 2px;
+  font-family: var(--serif);
+  font-size: .98rem;
+  font-weight: 600;
+  color: var(--pine);
+}
+.next-when { font-size: .78rem; font-weight: 600; color: #8a5a2b; }
+.next-desc { margin-top: 6px; font-size: .78rem; line-height: 1.7; color: #4d5751; }
+.next-card.is-final {
+  border-color: var(--pine);
+  background: linear-gradient(180deg, #16352b 0%, #102a22 100%);
+}
+.next-card.is-final .next-step { color: #c8b48d; }
+.next-card.is-final h4 { color: #fdfcf7; }
+.next-card.is-final .next-when { color: var(--gold-soft); }
+.next-card.is-final .next-desc { color: #c9d3ca; }
+
+/* ------------------------------------------------------------
    상담
    ------------------------------------------------------------ */
 .section-contact {
@@ -1210,6 +1452,11 @@ a.contact-card:focus-visible {
   .section-head.center .section-lede { margin-left: auto; margin-right: auto; }
   .type-summary { gap: 16px; }
   .type-card { padding: 20px 22px 18px; }
+  .vs { padding: 24px 22px 18px; }
+  .vs-title { font-size: 1.28rem; }
+  .vs-lede { font-size: .88rem; }
+  .vs-lanes { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; align-items: start; }
+  .stages { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 18px; align-items: start; }
   .plan-gallery { gap: 16px; }
   .plan-card figcaption { padding: 11px 14px; }
   .header-inner { min-height: 64px; }

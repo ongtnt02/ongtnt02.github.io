@@ -402,13 +402,14 @@ a { color: inherit; }
 .event-media {
   position: relative;
   margin: 0;
-  background: #16231d;
+  background: #0f231b;
 }
 .event-media img {
   width: 100%;
-  aspect-ratio: 3 / 2;
-  object-fit: cover;
-  object-position: 50% 55%;
+  height: auto;
+  aspect-ratio: 1053 / 1494;
+  object-fit: contain;
+  object-position: 50% 0;
 }
 .event-media figcaption {
   position: absolute;
@@ -455,15 +456,38 @@ a { color: inherit; }
   overflow: hidden;
 }
 .event-terms li {
-  display: flex;
-  justify-content: space-between;
-  gap: 12px;
+  display: grid;
+  grid-template-columns: 5.2em minmax(0, 1fr);
+  align-items: start;
+  gap: 2px 14px;
   background: #fcfbf6;
   padding: 10px 14px;
   font-size: .85rem;
   color: #4a544d;
 }
-.event-terms li span { color: #7c857e; font-size: .82rem; }
+.event-terms li span {
+  color: #7c857e;
+  font-size: .8rem;
+  line-height: 1.7;
+}
+.event-terms li p {
+  margin: 0;
+  font-size: .86rem;
+  line-height: 1.6;
+  word-break: keep-all;
+}
+.event-download {
+  width: 100%;
+  margin-top: 18px;
+  text-align: center;
+}
+.event-download-hint {
+  margin-top: 8px;
+  font-size: .75rem;
+  line-height: 1.6;
+  color: #7b847d;
+  text-align: center;
+}
 .event-note {
   margin-top: 12px;
   font-size: .78rem;
@@ -1115,9 +1139,11 @@ a { color: inherit; }
   .hero-media img { object-position: 50% 45%; }
   .stats { grid-template-columns: repeat(4, minmax(0, 1fr)); }
   .stat { padding: 16px 18px 18px; }
-  .event-card { grid-template-columns: 44% 1fr; align-items: stretch; }
-  .event-media img { height: 100%; aspect-ratio: auto; min-height: 300px; }
+  .event-card { grid-template-columns: minmax(0, .92fr) minmax(0, 1.08fr); align-items: stretch; }
+  .event-media { display: flex; align-items: center; justify-content: center; }
+  .event-media img { height: auto; aspect-ratio: 1053 / 1494; }
   .event-copy { padding: 30px 28px 26px; }
+  .event-download { width: 100%; }
   .overview-grid { grid-template-columns: 1.1fr 1fr; align-items: start; gap: 18px; }
   .overview-figs { grid-template-columns: 1fr; }
   .loc-grid { grid-template-columns: 1fr 1fr; align-items: start; gap: 22px; }

@@ -737,6 +737,7 @@ section[id] { scroll-margin-top: 62px; }
 }
 .note-box h3 { font-size: .98rem; color: var(--pine); margin-bottom: 6px; }
 .note-box p { font-size: .85rem; color: #4d5751; line-height: 1.75; }
+.note-box p + p { margin-top: 9px; }
 
 /* ------------------------------------------------------------
    평형

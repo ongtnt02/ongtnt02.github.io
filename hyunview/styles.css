@@ -380,6 +380,7 @@ a { color: inherit; }
 .event {
   background: #0b201a;
   padding: 0 0 34px;
+  scroll-margin-top: 62px;
 }
 .event-card {
   position: relative;
@@ -494,6 +495,8 @@ a { color: inherit; }
   line-height: 1.7;
   color: #7b847d;
 }
+
+section[id] { scroll-margin-top: 62px; }
 
 /* ------------------------------------------------------------
    공통 섹션
@@ -1144,6 +1147,7 @@ a { color: inherit; }
   .event-media img { height: auto; aspect-ratio: 1053 / 1494; }
   .event-copy { padding: 30px 28px 26px; }
   .event-download { width: 100%; }
+  section[id] { scroll-margin-top: 68px; }
   .overview-grid { grid-template-columns: 1.1fr 1fr; align-items: start; gap: 18px; }
   .overview-figs { grid-template-columns: 1fr; }
   .loc-grid { grid-template-columns: 1fr 1fr; align-items: start; gap: 22px; }

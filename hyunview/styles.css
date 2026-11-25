@@ -1023,7 +1023,7 @@ a.contact-card:focus-visible {
   border-radius: 10px;
   padding: 14px 16px;
   margin-bottom: 16px;
-  font-size: .92rem;
+  font-size: 1.05rem;
   color: var(--pine);
   letter-spacing: -0.01em;
 }
@@ -1043,21 +1043,21 @@ a.contact-card:focus-visible {
   border-left: 3px solid var(--pine);
 }
 .notice-fact-key {
-  font-size: .72rem;
-  letter-spacing: .08em;
-  color: #6d7a71;
-  margin-bottom: 3px;
+  font-size: .78rem;
+  letter-spacing: .06em;
+  color: #5f6c63;
+  margin-bottom: 4px;
 }
 .notice-fact-value {
-  font-size: .86rem;
-  line-height: 1.65;
+  font-size: 1rem;
+  line-height: 1.7;
   color: var(--ink);
 }
 .notice-fact-value .sub {
   display: block;
-  font-size: .78rem;
-  color: #6d7a71;
-  margin-top: 2px;
+  font-size: .88rem;
+  color: #5f6c63;
+  margin-top: 3px;
 }
 .notice-blocks {
   display: grid;
@@ -1065,19 +1065,19 @@ a.contact-card:focus-visible {
   margin-top: 22px;
 }
 .notice-blocks h3 {
-  font-size: .95rem;
+  font-size: 1.02rem;
   color: var(--pine);
   margin-bottom: 8px;
 }
 .notice-sources { margin-top: 22px; }
-.notice-sources h3 { font-size: .95rem; color: var(--pine); margin-bottom: 8px; }
+.notice-sources h3 { font-size: 1.02rem; color: var(--pine); margin-bottom: 8px; }
 .notice-list { display: grid; gap: 6px; }
 .notice-list li {
   position: relative;
   padding-left: 11px;
-  font-size: .8rem;
+  font-size: .95rem;
   line-height: 1.72;
-  color: #4d5751;
+  color: #414b45;
 }
 .notice-list li::before {
   content: "";
@@ -1087,7 +1087,7 @@ a.contact-card:focus-visible {
   border-radius: 50%;
   background: #a8b0a9;
 }
-.notice-list.sources li { color: #7b847d; font-size: .75rem; }
+.notice-list.sources li { color: #7b847d; font-size: .78rem; }
 
 /* ------------------------------------------------------------
    푸터
